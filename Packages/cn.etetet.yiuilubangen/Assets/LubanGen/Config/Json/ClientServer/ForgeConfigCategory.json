@@ -1,0 +1,182 @@
+[
+  {
+    "Id": 1,
+    "ItemIds": [
+      1002,
+      1002,
+      1002
+    ],
+    "GetItemIds": [
+      1002,
+      1001
+    ],
+    "Name": "诅咒之地1",
+    "MiniEnterLevel": [
+      1,
+      10
+    ],
+    "PrefabName": "LeoPlayer"
+  },
+  {
+    "Id": 2,
+    "ItemIds": [
+      1003
+    ],
+    "GetItemIds": [
+      1003
+    ],
+    "Name": "诅咒之地2",
+    "MiniEnterLevel": [
+      10,
+      20
+    ],
+    "PrefabName": "DogPrefab"
+  },
+  {
+    "Id": 3,
+    "ItemIds": [
+      1004
+    ],
+    "GetItemIds": [
+      1004
+    ],
+    "Name": "诅咒之地3",
+    "MiniEnterLevel": [
+      20,
+      30
+    ],
+    "PrefabName": "HudiePrefab"
+  },
+  {
+    "Id": 4,
+    "ItemIds": [
+      1005
+    ],
+    "GetItemIds": [
+      1005
+    ],
+    "Name": "诅咒之地4",
+    "MiniEnterLevel": [
+      30,
+      40
+    ],
+    "PrefabName": "EnergyPrefab"
+  },
+  {
+    "Id": 5,
+    "ItemIds": [
+      1006
+    ],
+    "GetItemIds": [
+      1006
+    ],
+    "Name": "诅咒之地5",
+    "MiniEnterLevel": [
+      40,
+      50
+    ],
+    "PrefabName": "DogPrefab"
+  },
+  {
+    "Id": 6,
+    "ItemIds": [
+      1007
+    ],
+    "GetItemIds": [
+      1007
+    ],
+    "Name": "诅咒之地6",
+    "MiniEnterLevel": [
+      50,
+      60
+    ],
+    "PrefabName": "DogPrefab"
+  },
+  {
+    "Id": 7,
+    "ItemIds": [
+      1008
+    ],
+    "GetItemIds": [
+      1008
+    ],
+    "Name": "诅咒之地7",
+    "MiniEnterLevel": [
+      60,
+      70
+    ],
+    "PrefabName": "DogPrefab"
+  },
+  {
+    "Id": 8,
+    "ItemIds": [
+      1009
+    ],
+    "GetItemIds": [
+      1009
+    ],
+    "Name": "诅咒之地8",
+    "MiniEnterLevel": [
+      70,
+      80
+    ],
+    "PrefabName": "DogPrefab"
+  },
+  {
+    "Id": 9,
+    "ItemIds": [
+      1010
+    ],
+    "GetItemIds": [
+      1010
+    ],
+    "Name": "诅咒之地9",
+    "MiniEnterLevel": [
+      80,
+      90
+    ],
+    "PrefabName": "HudiePrefab"
+  },
+  {
+    "Id": 10,
+    "ItemIds": [
+      1011
+    ],
+    "GetItemIds": [
+      1011
+    ],
+    "Name": "诅咒之地10",
+    "MiniEnterLevel": [
+      90100
+    ],
+    "PrefabName": "HudiePrefab"
+  },
+  {
+    "Id": 11,
+    "ItemIds": [
+      1012
+    ],
+    "GetItemIds": [
+      1012
+    ],
+    "Name": "诅咒之地11",
+    "MiniEnterLevel": [
+      100110
+    ],
+    "PrefabName": "HudiePrefab"
+  },
+  {
+    "Id": 12,
+    "ItemIds": [
+      1013
+    ],
+    "GetItemIds": [
+      1013
+    ],
+    "Name": "诅咒之地12",
+    "MiniEnterLevel": [
+      110120
+    ],
+    "PrefabName": "HudiePrefab"
+  }
+]

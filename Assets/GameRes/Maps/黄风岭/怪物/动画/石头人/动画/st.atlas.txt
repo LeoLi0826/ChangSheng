@@ -1,0 +1,62 @@
+
+st.png
+size: 708,708
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+st_0
+  rotate: true
+  xy: 241, 95
+  size: 261, 234
+  orig: 271, 236
+  offset: 9, 1
+  index: -1
+st_1
+  rotate: false
+  xy: 2, 87
+  size: 237, 269
+  orig: 239, 271
+  offset: 1, 2
+  index: -1
+st_2
+  rotate: false
+  xy: 2, 358
+  size: 323, 348
+  orig: 323, 348
+  offset: 0, 0
+  index: -1
+st_3
+  rotate: true
+  xy: 477, 293
+  size: 133, 229
+  orig: 133, 231
+  offset: 0, 1
+  index: -1
+st_4
+  rotate: true
+  xy: 327, 428
+  size: 278, 209
+  orig: 279, 220
+  offset: 1, 9
+  index: -1
+st_5
+  rotate: true
+  xy: 538, 567
+  size: 139, 151
+  orig: 139, 151
+  offset: 0, 0
+  index: -1
+st_6
+  rotate: false
+  xy: 477, 181
+  size: 139, 110
+  orig: 141, 112
+  offset: 1, 1
+  index: -1
+st_7
+  rotate: true
+  xy: 538, 455
+  size: 110, 145
+  orig: 110, 145
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,2888 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &963326379781167375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 364787488107326164}
+  - component: {fileID: 6883063722630841309}
+  - component: {fileID: 6395006746463245345}
+  - component: {fileID: 4133207464024220859}
+  - component: {fileID: 367981673180629320}
+  - component: {fileID: 558335735637691465}
+  m_Layer: 5
+  m_Name: BookItemPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &364787488107326164
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963326379781167375}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7976820454261993978}
+  - {fileID: 7959722050379476119}
+  m_Father: {fileID: 0}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6883063722630841309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963326379781167375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 5825255451230631806}
+  toggleTransition: 1
+  graphic: {fileID: 9007546075410272434}
+  m_Group: {fileID: 0}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_IsOn: 1
+--- !u!114 &6395006746463245345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963326379781167375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76af6b314c984a70bd77fd9c0d998f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: AllChildCdeTable
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[YIUIFramework.UIBindCDETable, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_AllChildUIOwner
+      Entry: 7
+      Data: 1|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[ET.Entity,
+        Unity.Core]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 2|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsSplitData
+      Entry: 5
+      Data: false
+    - Name: PanelSplitData
+      Entry: 7
+      Data: 3|YIUIFramework.UIPanelSplitData, YIUIFramework
+    - Name: Panel
+      Entry: 6
+      Data: 
+    - Name: AllViewParent
+      Entry: 6
+      Data: 
+    - Name: AllCommonView
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[UnityEngine.RectTransform, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: AllCreateView
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[UnityEngine.RectTransform, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: AllPopupViewParent
+      Entry: 6
+      Data: 
+    - Name: AllPopupView
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[UnityEngine.RectTransform, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CreatePanelViewEnum
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: PanelSplitEditorShowData
+      Entry: 6
+      Data: 
+  ComponentTable: {fileID: 4133207464024220859}
+  DataTable: {fileID: 367981673180629320}
+  EventTable: {fileID: 558335735637691465}
+  PkgName: HandBook
+  ResName: BookItemPrefab
+  UICodeType: 2
+  WindowOption: 0
+  PanelLayer: 3
+  PanelOption: 0
+  PanelStackOption: 2
+  ViewWindowType: 0
+  ViewStackOption: 2
+  CachePanelTime: 10
+  Priority: 0
+--- !u!114 &4133207464024220859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963326379781167375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af0d78ed910487782cd796592642ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_AllBindDic
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.Component,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_AllBindPair
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[YIUIFramework.UIBindPairData, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 3|YIUIFramework.UIBindPairData, YIUIFramework
+    - Name: Name
+      Entry: 6
+      Data: 
+    - Name: Component
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_AutoSetNullName: 1
+  m_NullNameAddTypeName: 1
+--- !u!114 &367981673180629320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963326379781167375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e653f1c5ec04766b7a16c1a9b9ff51e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 367981673180629320}
+    - {fileID: 8617873160988338682}
+    - {fileID: 464138393678314243}
+    - {fileID: 6774325004481600871}
+    - {fileID: 2143495898128944943}
+    - {fileID: 1150353743618237671}
+    - {fileID: 2030412912749884586}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_DataDic
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIData,
+        YIUIFramework]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataItemState
+    - Name: $v
+      Entry: 7
+      Data: 2|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataItemState
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 1600150899
+    - Name: m_DataValue
+      Entry: 7
+      Data: 3|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 4|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 5|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 7|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 8|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIData, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataSelect
+    - Name: $v
+      Entry: 7
+      Data: 10|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataSelect
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 216528052
+    - Name: m_DataValue
+      Entry: 7
+      Data: 11|YIUIFramework.UIDataValueBool, YIUIFramework
+    - Name: m_Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 12|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 9
+      Data: 5
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 9
+      Data: 6
+    - Name: signature
+      Entry: 7
+      Data: 13|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 8
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 14|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataIcon
+    - Name: $v
+      Entry: 7
+      Data: 15|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataIcon
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 1401003167
+    - Name: m_DataValue
+      Entry: 7
+      Data: 16|YIUIFramework.UIDataValueString, YIUIFramework
+    - Name: m_Value
+      Entry: 1
+      Data: itemicon_s_sword
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 17|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 9
+      Data: 5
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 9
+      Data: 6
+    - Name: signature
+      Entry: 7
+      Data: 18|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 8
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 19|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataTypeName
+    - Name: $v
+      Entry: 7
+      Data: 20|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataTypeName
+    - Name: m_DataGuid
+      Entry: 3
+      Data: -1963847894
+    - Name: m_DataValue
+      Entry: 7
+      Data: 21|YIUIFramework.UIDataValueString, YIUIFramework
+    - Name: m_Value
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 22|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 9
+      Data: 5
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 9
+      Data: 6
+    - Name: signature
+      Entry: 7
+      Data: 23|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 8
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 24|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataLabelType
+    - Name: $v
+      Entry: 7
+      Data: 25|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataLabelType
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 956747315
+    - Name: m_DataValue
+      Entry: 7
+      Data: 26|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 27|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 9
+      Data: 5
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 9
+      Data: 6
+    - Name: signature
+      Entry: 7
+      Data: 28|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 8
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 29|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &558335735637691465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963326379781167375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286a297a42e64638b9035112147b4d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 558335735637691465}
+    - {fileID: 3235746817118477676}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_EventDic
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIEventBase,
+        YIUIFramework]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_EventSelect
+    - Name: $v
+      Entry: 7
+      Data: 2|YIUIFramework.UIEventP0, YIUIFramework
+    - Name: m_EventName
+      Entry: 1
+      Data: u_EventSelect
+    - Name: AllEventParamType
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
+        YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnRemoveAction
+      Entry: 7
+      Data: 4|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 5|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIBindEventTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveUIEvent
+    - Name: delegateType
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 7|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 8|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIEventBase, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: AllEventParamType
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
+        YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  AllEventParamType: 
+--- !u!1 &1778088382094575506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2212171949412297818}
+  - component: {fileID: 3188306889819379588}
+  - component: {fileID: 6015953055516986904}
+  - component: {fileID: 5237466226201352721}
+  - component: {fileID: 464138393678314243}
+  m_Layer: 5
+  m_Name: Button_Item_Add
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2212171949412297818
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778088382094575506}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5636958430186012904}
+  m_Father: {fileID: 7976820454261993978}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3188306889819379588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778088382094575506}
+  m_CullTransparentMesh: 0
+--- !u!114 &6015953055516986904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778088382094575506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 17302de34923a4e919fa7720f8ab6292, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5237466226201352721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778088382094575506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 2
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 849d4950b3b7e401f991879d3fb824cc, type: 3}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 6015953055516986904}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &464138393678314243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778088382094575506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da50a1326ce847e5ac0ccab8fedf96bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 367981673180629320}
+    - {fileID: 8617873160988338682}
+    - {fileID: 464138393678314243}
+    - {fileID: 6774325004481600871}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_DataSelectDic
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
+        YIUIFramework]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataItemState
+    - Name: $v
+      Entry: 7
+      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+    - Name: m_Data
+      Entry: 7
+      Data: 3|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataItemState
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 1600150899
+    - Name: m_DataValue
+      Entry: 7
+      Data: 4|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 7
+      Data: 7|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 8|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIData, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Datas
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 12|YIUIFramework.UIDataBoolRef, YIUIFramework
+    - Name: m_Data
+      Entry: 9
+      Data: 3
+    - Name: m_CompareMode
+      Entry: 3
+      Data: 2
+    - Name: m_ReferenceData
+      Entry: 7
+      Data: 13|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Reverse
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_DataTable: {fileID: 367981673180629320}
+  m_BooleanLogic: 0
+  m_TransitionMode: 0
+  m_TransitionTime: 0.5
+--- !u!1 &1792308136825095224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8244852814850362232}
+  - component: {fileID: 6099275339815331660}
+  - component: {fileID: 1771125027305452618}
+  - component: {fileID: 1150353743618237671}
+  m_Layer: 5
+  m_Name: ItemIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8244852814850362232
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792308136825095224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3411146638120176424}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 109, y: 109}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6099275339815331660
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792308136825095224}
+  m_CullTransparentMesh: 0
+--- !u!114 &1771125027305452618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792308136825095224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 45de03bf90803496ea507e99722fa159, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1150353743618237671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792308136825095224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1bc0d09ab654b1e86dae8222b40392d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 367981673180629320}
+    - {fileID: 1150353743618237671}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_DataSelectDic
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
+        YIUIFramework]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataIcon
+    - Name: $v
+      Entry: 7
+      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+    - Name: m_Data
+      Entry: 7
+      Data: 3|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataIcon
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 1401003167
+    - Name: m_DataValue
+      Entry: 7
+      Data: 4|YIUIFramework.UIDataValueString, YIUIFramework
+    - Name: m_Value
+      Entry: 1
+      Data: itemicon_s_sword
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 7
+      Data: 7|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 8|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIData, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_DataTable: {fileID: 367981673180629320}
+  m_Image: {fileID: 1771125027305452618}
+  m_SetNativeSize: 0
+  m_ChangeEnabled: 1
+--- !u!1 &2128210019875273687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4859226905841363234}
+  - component: {fileID: 9204850915956811264}
+  - component: {fileID: 4059539112796120961}
+  - component: {fileID: 2030412912749884586}
+  m_Layer: 5
+  m_Name: Block
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4859226905841363234
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128210019875273687}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7976820454261993978}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9204850915956811264
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128210019875273687}
+  m_CullTransparentMesh: 1
+--- !u!114 &4059539112796120961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128210019875273687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 0.5529412}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3219b4ecaa97f44898f3804d963b932d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2030412912749884586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128210019875273687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da50a1326ce847e5ac0ccab8fedf96bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 367981673180629320}
+    - {fileID: 2030412912749884586}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_DataSelectDic
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
+        YIUIFramework]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataLabelType
+    - Name: $v
+      Entry: 7
+      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+    - Name: m_Data
+      Entry: 7
+      Data: 3|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataLabelType
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 956747315
+    - Name: m_DataValue
+      Entry: 7
+      Data: 4|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 7
+      Data: 7|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 8|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIData, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Datas
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 12|YIUIFramework.UIDataBoolRef, YIUIFramework
+    - Name: m_Data
+      Entry: 9
+      Data: 3
+    - Name: m_CompareMode
+      Entry: 3
+      Data: 2
+    - Name: m_ReferenceData
+      Entry: 7
+      Data: 13|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Reverse
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_DataTable: {fileID: 367981673180629320}
+  m_BooleanLogic: 0
+  m_TransitionMode: 0
+  m_TransitionTime: 0.5
+--- !u!1 &2719480850620057466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3411146638120176424}
+  - component: {fileID: 1635958838289429537}
+  - component: {fileID: 5825255451230631806}
+  - component: {fileID: 8617873160988338682}
+  m_Layer: 5
+  m_Name: ItemBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3411146638120176424
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719480850620057466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8244852814850362232}
+  m_Father: {fileID: 7976820454261993978}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1635958838289429537
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719480850620057466}
+  m_CullTransparentMesh: 0
+--- !u!114 &5825255451230631806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719480850620057466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 17302de34923a4e919fa7720f8ab6292, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8617873160988338682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719480850620057466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da50a1326ce847e5ac0ccab8fedf96bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 367981673180629320}
+    - {fileID: 8617873160988338682}
+    - {fileID: 464138393678314243}
+    - {fileID: 6774325004481600871}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_DataSelectDic
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
+        YIUIFramework]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataItemState
+    - Name: $v
+      Entry: 7
+      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+    - Name: m_Data
+      Entry: 7
+      Data: 3|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataItemState
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 1600150899
+    - Name: m_DataValue
+      Entry: 7
+      Data: 4|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 7
+      Data: 7|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 8|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIData, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Datas
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 12|YIUIFramework.UIDataBoolRef, YIUIFramework
+    - Name: m_Data
+      Entry: 9
+      Data: 3
+    - Name: m_CompareMode
+      Entry: 3
+      Data: 2
+    - Name: m_ReferenceData
+      Entry: 7
+      Data: 13|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Reverse
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_DataTable: {fileID: 367981673180629320}
+  m_BooleanLogic: 0
+  m_TransitionMode: 0
+  m_TransitionTime: 0.5
+--- !u!1 &2881144373141495804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7976820454261993978}
+  - component: {fileID: 4499030885182402699}
+  - component: {fileID: 3235746817118477676}
+  m_Layer: 5
+  m_Name: ItemState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7976820454261993978
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881144373141495804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3411146638120176424}
+  - {fileID: 2212171949412297818}
+  - {fileID: 2403746931691467154}
+  - {fileID: 4859226905841363234}
+  m_Father: {fileID: 364787488107326164}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4499030885182402699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881144373141495804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3235746817118477676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881144373141495804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b84c394472d09c84a9af3111a280f2eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 558335735637691465}
+    - {fileID: 3235746817118477676}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_EventTable
+      Entry: 10
+      Data: 0
+    - Name: m_EventName
+      Entry: 1
+      Data: u_EventSelect
+    - Name: m_UIEvent
+      Entry: 7
+      Data: 0|YIUIFramework.UIEventP0, YIUIFramework
+    - Name: m_EventName
+      Entry: 1
+      Data: u_EventSelect
+    - Name: AllEventParamType
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
+        YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnRemoveAction
+      Entry: 7
+      Data: 2|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 3|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIBindEventTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveUIEvent
+    - Name: delegateType
+      Entry: 7
+      Data: 4|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 5|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIEventBase, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_SkipWhenDrag: 0
+  m_Selectable: {fileID: 4499030885182402699}
+--- !u!1 &3054255730805696798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5361363785899182507}
+  - component: {fileID: 1855009301762539054}
+  - component: {fileID: 4751460020192120653}
+  m_Layer: 5
+  m_Name: Icon_Lock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5361363785899182507
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054255730805696798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2403746931691467154}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 48, y: 67}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1855009301762539054
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054255730805696798}
+  m_CullTransparentMesh: 0
+--- !u!114 &4751460020192120653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054255730805696798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.94509804, g: 0.94509804, b: 0.94509804, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0f57b0d223c0342358f1787c1d1451cf, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4419668913960963638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5636958430186012904}
+  - component: {fileID: 1823111284347415123}
+  - component: {fileID: 5922611893083002482}
+  m_Layer: 5
+  m_Name: Icon_Add
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5636958430186012904
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419668913960963638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2212171949412297818}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1823111284347415123
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419668913960963638}
+  m_CullTransparentMesh: 0
+--- !u!114 &5922611893083002482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419668913960963638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 09c10e1b81fe7479ea127968246db8e4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5667505590782598314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2403746931691467154}
+  - component: {fileID: 4135593030856424454}
+  - component: {fileID: 4186979900473007046}
+  - component: {fileID: 6774325004481600871}
+  m_Layer: 5
+  m_Name: Button_Item_Lock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2403746931691467154
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5667505590782598314}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5361363785899182507}
+  m_Father: {fileID: 7976820454261993978}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4135593030856424454
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5667505590782598314}
+  m_CullTransparentMesh: 0
+--- !u!114 &4186979900473007046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5667505590782598314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 17302de34923a4e919fa7720f8ab6292, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6774325004481600871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5667505590782598314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da50a1326ce847e5ac0ccab8fedf96bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 367981673180629320}
+    - {fileID: 8617873160988338682}
+    - {fileID: 464138393678314243}
+    - {fileID: 6774325004481600871}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_DataSelectDic
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
+        YIUIFramework]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataItemState
+    - Name: $v
+      Entry: 7
+      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+    - Name: m_Data
+      Entry: 7
+      Data: 3|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataItemState
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 1600150899
+    - Name: m_DataValue
+      Entry: 7
+      Data: 4|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 7
+      Data: 7|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 8|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIData, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Datas
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 12|YIUIFramework.UIDataBoolRef, YIUIFramework
+    - Name: m_Data
+      Entry: 9
+      Data: 3
+    - Name: m_CompareMode
+      Entry: 3
+      Data: 2
+    - Name: m_ReferenceData
+      Entry: 7
+      Data: 13|YIUIFramework.UIDataValueInt, YIUIFramework
+    - Name: m_Value
+      Entry: 3
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Reverse
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_DataTable: {fileID: 367981673180629320}
+  m_BooleanLogic: 0
+  m_TransitionMode: 0
+  m_TransitionTime: 0.5
+--- !u!1 &7799088510545056030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7959722050379476119}
+  - component: {fileID: 9093751421222102266}
+  - component: {fileID: 9007546075410272434}
+  - component: {fileID: 2143495898128944943}
+  m_Layer: 5
+  m_Name: Select
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &7959722050379476119
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799088510545056030}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 364787488107326164}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 126, y: 126}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9093751421222102266
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799088510545056030}
+  m_CullTransparentMesh: 0
+--- !u!114 &9007546075410272434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799088510545056030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.15294118, g: 0.8627451, b: 0.58431375, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 044a3a3485a0f4f36b58fb7d97b984e3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2143495898128944943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799088510545056030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da50a1326ce847e5ac0ccab8fedf96bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 367981673180629320}
+    - {fileID: 2143495898128944943}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_DataSelectDic
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
+        YIUIFramework]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_DataSelect
+    - Name: $v
+      Entry: 7
+      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+    - Name: m_Data
+      Entry: 7
+      Data: 3|YIUIFramework.UIData, YIUIFramework
+    - Name: m_Name
+      Entry: 1
+      Data: u_DataSelect
+    - Name: m_DataGuid
+      Entry: 3
+      Data: 216528052
+    - Name: m_DataValue
+      Entry: 7
+      Data: 4|YIUIFramework.UIDataValueBool, YIUIFramework
+    - Name: m_Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnDataRemoveAction
+      Entry: 7
+      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveData
+    - Name: delegateType
+      Entry: 7
+      Data: 7|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 8|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIFramework.UIData, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Datas
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 12|YIUIFramework.UIDataBoolRef, YIUIFramework
+    - Name: m_Data
+      Entry: 9
+      Data: 3
+    - Name: m_CompareMode
+      Entry: 3
+      Data: 2
+    - Name: m_ReferenceData
+      Entry: 7
+      Data: 13|YIUIFramework.UIDataValueBool, YIUIFramework
+    - Name: m_Value
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Reverse
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_DataTable: {fileID: 367981673180629320}
+  m_BooleanLogic: 0
+  m_TransitionMode: 0
+  m_TransitionTime: 0.5

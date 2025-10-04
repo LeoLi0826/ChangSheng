@@ -1,0 +1,55 @@
+
+鬼竹.png
+size: 1436,1436
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gz_0
+  rotate: true
+  xy: 1150, 940
+  size: 140, 221
+  orig: 143, 225
+  offset: 1, 2
+  index: -1
+gz_1
+  rotate: true
+  xy: 1150, 1082
+  size: 158, 228
+  orig: 160, 230
+  offset: 1, 1
+  index: -1
+gz_2
+  rotate: false
+  xy: 958, 57
+  size: 239, 316
+  orig: 300, 401
+  offset: 58, 78
+  index: -1
+gz_3
+  rotate: true
+  xy: 1150, 1242
+  size: 192, 223
+  orig: 198, 264
+  offset: 3, 41
+  index: -1
+gz_4
+  rotate: false
+  xy: 2, 268
+  size: 582, 1166
+  orig: 582, 1168
+  offset: 0, 0
+  index: -1
+gz_5
+  rotate: false
+  xy: 586, 375
+  size: 562, 1059
+  orig: 562, 1059
+  offset: 0, 0
+  index: -1
+gz_6
+  rotate: true
+  xy: 2, 2
+  size: 264, 954
+  orig: 266, 956
+  offset: 1, 1
+  index: -1

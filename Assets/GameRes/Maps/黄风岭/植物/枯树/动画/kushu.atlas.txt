@@ -1,0 +1,48 @@
+
+kushu.png
+size: 1985,1985
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ks_0
+  rotate: true
+  xy: 1547, 102
+  size: 113, 310
+  orig: 113, 310
+  offset: 0, 0
+  index: -1
+ks_1
+  rotate: false
+  xy: 545, 44
+  size: 499, 171
+  orig: 500, 172
+  offset: 0, 0
+  index: -1
+ks_2
+  rotate: true
+  xy: 1046, 99
+  size: 116, 499
+  orig: 116, 499
+  offset: 0, 0
+  index: -1
+ks_3
+  rotate: true
+  xy: 1046, 2
+  size: 95, 352
+  orig: 95, 352
+  offset: 0, 0
+  index: -1
+ks_4
+  rotate: true
+  xy: 2, 16
+  size: 199, 541
+  orig: 199, 541
+  offset: 0, 0
+  index: -1
+ks_5
+  rotate: false
+  xy: 2, 217
+  size: 1733, 1766
+  orig: 1733, 1766
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,47 @@
+{
+"Id": 10,
+"Name": "StateSync",
+"ScriptsReferences": {
+    "ModelView": [
+      "ET.Core",
+      "Unity.Mathematics",
+      "ET.Loader",
+      "ET.Model",
+      "Unity.Cinemachine",
+      "AstarPathfindingProject",
+      "spine-unity",
+      "Unity.InputSystem",
+      "ET.Init"
+    ],
+    "Model": [
+      "ET.Core",
+      "Unity.Mathematics",
+      "ET.MemoryPack",
+      "ET.Recast"
+    ],
+    "HotfixView": [
+      "ET.Core",
+      "Unity.Mathematics",
+      "ET.Loader",
+      "ET.MemoryPack",
+      "ET.Model",
+      "ET.Hotfix",
+      "ET.ModelView",
+      "ET.YooAssets",
+      "ET.ReferenceCollector",
+      "Unity.Cinemachine",
+      "AstarPathfindingProject",
+      "Unity.InputSystem",
+      "spine-unity",
+      "ET.Init"
+    ],
+    "Hotfix": [
+      "ET.Core",
+      "Unity.Mathematics",
+      "ET.Loader",
+      "ET.MemoryPack",
+      "ET.Model",
+      "ET.Recast"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+
+250520_羊肚菌.png
+size: 678,260
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+亮度对比度 1 拷贝 10
+  rotate: true
+  xy: 436, 7
+  size: 117, 63
+  orig: 119, 65
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 11
+  rotate: true
+  xy: 288, 126
+  size: 132, 233
+  orig: 134, 235
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 12
+  rotate: true
+  xy: 609, 18
+  size: 98, 66
+  orig: 100, 68
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 13
+  rotate: true
+  xy: 523, 63
+  size: 195, 84
+  orig: 196, 84
+  offset: 0, 0
+  index: -1
+亮度对比度 1 拷贝 8
+  rotate: true
+  xy: 288, 13
+  size: 111, 146
+  orig: 111, 146
+  offset: 0, 0
+  index: -1
+亮度对比度 1 拷贝 9
+  rotate: true
+  xy: 609, 118
+  size: 140, 67
+  orig: 141, 67
+  offset: 1, 0
+  index: -1
+羊肚菌 拷贝
+  rotate: true
+  xy: 2, 2
+  size: 256, 284
+  orig: 260, 286
+  offset: 2, 1
+  index: -1

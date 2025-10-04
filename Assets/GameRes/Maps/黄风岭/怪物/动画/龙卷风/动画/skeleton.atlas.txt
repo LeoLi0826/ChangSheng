@@ -1,0 +1,426 @@
+
+skeleton.png
+size: 2045,2045
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+上1
+  rotate: false
+  xy: 1857, 1657
+  size: 179, 257
+  orig: 2220, 1754
+  offset: 408, 1240
+  index: -1
+上10
+  rotate: true
+  xy: 1181, 1554
+  size: 231, 259
+  orig: 2220, 1754
+  offset: 1667, 1123
+  index: -1
+上11
+  rotate: true
+  xy: 952, 1572
+  size: 213, 227
+  orig: 2220, 1754
+  offset: 1684, 1161
+  index: -1
+上12
+  rotate: false
+  xy: 683, 1640
+  size: 267, 167
+  orig: 2220, 1754
+  offset: 1644, 1223
+  index: -1
+上2
+  rotate: false
+  xy: 2, 1343
+  size: 455, 303
+  orig: 2220, 1754
+  offset: 249, 1186
+  index: -1
+上8
+  rotate: false
+  xy: 1389, 677
+  size: 576, 433
+  orig: 2220, 1754
+  offset: 1272, 970
+  index: -1
+上9
+  rotate: false
+  xy: 1442, 1414
+  size: 352, 349
+  orig: 2220, 1754
+  offset: 1542, 1054
+  index: -1
+下1
+  rotate: false
+  xy: 1491, 1928
+  size: 186, 115
+  orig: 2220, 1754
+  offset: 838, 173
+  index: -1
+下10
+  rotate: false
+  xy: 395, 1648
+  size: 286, 159
+  orig: 2220, 1754
+  offset: 1407, 112
+  index: -1
+下11
+  rotate: false
+  xy: 1177, 1787
+  size: 290, 152
+  orig: 2220, 1754
+  offset: 1444, 140
+  index: -1
+下12
+  rotate: false
+  xy: 1469, 1765
+  size: 386, 149
+  orig: 2220, 1754
+  offset: 1210, 146
+  index: -1
+下2
+  rotate: false
+  xy: 975, 1799
+  size: 200, 140
+  orig: 2220, 1754
+  offset: 742, 137
+  index: -1
+下3
+  rotate: false
+  xy: 1679, 1916
+  size: 349, 127
+  orig: 2220, 1754
+  offset: 733, 113
+  index: -1
+下4
+  rotate: false
+  xy: 552, 1809
+  size: 421, 130
+  orig: 2220, 1754
+  offset: 752, 101
+  index: -1
+下5
+  rotate: false
+  xy: 2, 1826
+  size: 548, 118
+  orig: 2220, 1754
+  offset: 794, 100
+  index: -1
+下6
+  rotate: false
+  xy: 960, 1941
+  size: 529, 102
+  orig: 2220, 1754
+  offset: 857, 91
+  index: -1
+下7
+  rotate: false
+  xy: 430, 1946
+  size: 528, 97
+  orig: 2220, 1754
+  offset: 903, 96
+  index: -1
+下8
+  rotate: false
+  xy: 2, 1954
+  size: 426, 89
+  orig: 2220, 1754
+  offset: 1106, 97
+  index: -1
+下9
+  rotate: false
+  xy: 2, 1665
+  size: 391, 159
+  orig: 2220, 1754
+  offset: 1186, 84
+  index: -1
+中1
+  rotate: true
+  xy: 2, 956
+  size: 309, 610
+  orig: 2220, 1754
+  offset: 248, 565
+  index: -1
+中10
+  rotate: false
+  xy: 864, 1160
+  size: 392, 392
+  orig: 2220, 1754
+  offset: 1625, 663
+  index: -1
+中11
+  rotate: false
+  xy: 459, 1267
+  size: 403, 371
+  orig: 2220, 1754
+  offset: 1614, 698
+  index: -1
+中2
+  rotate: true
+  xy: 582, 392
+  size: 392, 679
+  orig: 2220, 1754
+  offset: 237, 471
+  index: -1
+中3
+  rotate: false
+  xy: 2, 410
+  size: 578, 544
+  orig: 2220, 1754
+  offset: 201, 476
+  index: -1
+中5
+  rotate: false
+  xy: 1263, 259
+  size: 689, 416
+  orig: 2220, 1754
+  offset: 505, 486
+  index: -1
+中6
+  rotate: false
+  xy: 1258, 1112
+  size: 785, 300
+  orig: 2220, 1754
+  offset: 834, 538
+  index: -1
+中8
+  rotate: false
+  xy: 614, 786
+  size: 773, 324
+  orig: 2220, 1754
+  offset: 1102, 577
+  index: -1
+
+skeleton2.png
+size: 1804,1804
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+上3
+  rotate: false
+  xy: 2, 1406
+  size: 1800, 396
+  orig: 2220, 1754
+  offset: 127, 1031
+  index: -1
+上4
+  rotate: false
+  xy: 2, 923
+  size: 1750, 481
+  orig: 2220, 1754
+  offset: 326, 1017
+  index: -1
+中7
+  rotate: false
+  xy: 2, 127
+  size: 1634, 794
+  orig: 2220, 1754
+  offset: 127, 589
+  index: -1
+
+skeleton3.png
+size: 1962,1962
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+上5
+  rotate: true
+  xy: 1288, 334
+  size: 1626, 391
+  orig: 2220, 1754
+  offset: 452, 1001
+  index: -1
+上7
+  rotate: false
+  xy: 2, 2
+  size: 1079, 449
+  orig: 2220, 1754
+  offset: 847, 945
+  index: -1
+龙卷风6
+  rotate: false
+  xy: 2, 453
+  size: 1284, 1507
+  orig: 2220, 1754
+  offset: 597, 91
+  index: -1
+
+skeleton4.png
+size: 1915,1915
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+上6
+  rotate: false
+  xy: 2, 1504
+  size: 1400, 409
+  orig: 2220, 1754
+  offset: 686, 970
+  index: -1
+中12
+  rotate: false
+  xy: 761, 782
+  size: 812, 482
+  orig: 2220, 1754
+  offset: 1204, 577
+  index: -1
+中4
+  rotate: true
+  xy: 1404, 1266
+  size: 647, 509
+  orig: 2220, 1754
+  offset: 385, 439
+  index: -1
+中9
+  rotate: false
+  xy: 2, 1052
+  size: 757, 450
+  orig: 2220, 1754
+  offset: 1204, 577
+  index: -1
+
+skeleton5.png
+size: 1401,1401
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风1
+  rotate: true
+  xy: 2, 227
+  size: 1172, 1397
+  orig: 2220, 1754
+  offset: 520, 160
+  index: -1
+
+skeleton6.png
+size: 1550,1550
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风7
+  rotate: true
+  xy: 2, 361
+  size: 1187, 1546
+  orig: 2220, 1754
+  offset: 694, 87
+  index: -1
+
+skeleton7.png
+size: 1400,1400
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风2
+  rotate: true
+  xy: 2, 166
+  size: 1232, 1396
+  orig: 2220, 1754
+  offset: 526, 149
+  index: -1
+
+skeleton8.png
+size: 1395,1395
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风12
+  rotate: true
+  xy: 2, 137
+  size: 1256, 1391
+  orig: 2220, 1754
+  offset: 512, 127
+  index: -1
+
+skeleton9.png
+size: 1414,1414
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风11
+  rotate: true
+  xy: 2, 140
+  size: 1272, 1410
+  orig: 2220, 1754
+  offset: 500, 102
+  index: -1
+
+skeleton10.png
+size: 1474,1474
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风9
+  rotate: true
+  xy: 2, 196
+  size: 1276, 1470
+  orig: 2220, 1754
+  offset: 508, 78
+  index: -1
+
+skeleton11.png
+size: 1433,1433
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风10
+  rotate: true
+  xy: 2, 153
+  size: 1278, 1429
+  orig: 2220, 1754
+  offset: 509, 102
+  index: -1
+
+skeleton12.png
+size: 1502,1502
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风8
+  rotate: false
+  xy: 2, 2
+  size: 1293, 1498
+  orig: 2220, 1754
+  offset: 515, 78
+  index: -1
+
+skeleton13.png
+size: 1428,1428
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风3
+  rotate: true
+  xy: 2, 108
+  size: 1318, 1424
+  orig: 2220, 1754
+  offset: 497, 138
+  index: -1
+
+skeleton14.png
+size: 1460,1460
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风5
+  rotate: false
+  xy: 2, 2
+  size: 1324, 1456
+  orig: 2220, 1754
+  offset: 541, 135
+  index: -1
+
+skeleton15.png
+size: 1406,1406
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+龙卷风4
+  rotate: false
+  xy: 2, 2
+  size: 1340, 1402
+  orig: 2220, 1754
+  offset: 530, 163
+  index: -1

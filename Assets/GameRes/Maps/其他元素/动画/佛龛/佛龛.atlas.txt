@@ -1,0 +1,41 @@
+
+佛龛.png
+size: 1198,1198
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fk_0
+  rotate: true
+  xy: 349, 117
+  size: 174, 394
+  orig: 174, 396
+  offset: 0, 0
+  index: -1
+fk_1
+  rotate: true
+  xy: 2, 2
+  size: 289, 345
+  orig: 291, 347
+  offset: 1, 1
+  index: -1
+fk_2
+  rotate: true
+  xy: 349, 44
+  size: 71, 139
+  orig: 73, 141
+  offset: 1, 1
+  index: -1
+fk_3
+  rotate: true
+  xy: 349, 44
+  size: 71, 139
+  orig: 73, 141
+  offset: 1, 1
+  index: -1
+fk_4
+  rotate: false
+  xy: 2, 293
+  size: 805, 903
+  orig: 807, 905
+  offset: 1, 1
+  index: -1

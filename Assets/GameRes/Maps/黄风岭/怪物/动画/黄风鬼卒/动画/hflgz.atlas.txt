@@ -1,0 +1,69 @@
+
+hflgz.png
+size: 1310,1310
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hflgz_1
+  rotate: true
+  xy: 2, 281
+  size: 647, 765
+  orig: 649, 768
+  offset: 1, 2
+  index: -1
+hflgz_2
+  rotate: true
+  xy: 769, 244
+  size: 684, 304
+  orig: 684, 305
+  offset: 0, 0
+  index: -1
+hflgz_3
+  rotate: true
+  xy: 332, 32
+  size: 247, 352
+  orig: 247, 352
+  offset: 0, 0
+  index: -1
+hflgz_4
+  rotate: true
+  xy: 686, 22
+  size: 220, 296
+  orig: 223, 296
+  offset: 0, 0
+  index: -1
+hflgz_5
+  rotate: true
+  xy: 2, 2
+  size: 277, 328
+  orig: 277, 328
+  offset: 0, 0
+  index: -1
+hflgz_6
+  rotate: true
+  xy: 984, 81
+  size: 161, 212
+  orig: 162, 213
+  offset: 0, 0
+  index: -1
+hflgz_7
+  rotate: false
+  xy: 1075, 733
+  size: 146, 195
+  orig: 148, 196
+  offset: 2, 0
+  index: -1
+hflgz_8
+  rotate: false
+  xy: 1075, 565
+  size: 123, 166
+  orig: 125, 167
+  offset: 1, 0
+  index: -1
+hflgz_9
+  rotate: false
+  xy: 2, 930
+  size: 1194, 378
+  orig: 1196, 381
+  offset: 1, 2
+  index: -1

@@ -1,0 +1,48 @@
+
+250520_甘草.png
+size: 817,367
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+亮度对比度 1 拷贝 6
+  rotate: false
+  xy: 660, 232
+  size: 155, 133
+  orig: 155, 133
+  offset: 0, 0
+  index: -1
+亮度对比度 1 拷贝 7
+  rotate: true
+  xy: 660, 2
+  size: 111, 132
+  orig: 111, 132
+  offset: 0, 0
+  index: -1
+亮度对比度 1 拷贝 8
+  rotate: true
+  xy: 660, 115
+  size: 115, 144
+  orig: 115, 144
+  offset: 0, 0
+  index: -1
+亮度对比度 1 拷贝 9
+  rotate: false
+  xy: 524, 15
+  size: 134, 350
+  orig: 134, 350
+  offset: 0, 0
+  index: -1
+图案填充 1 拷贝 5
+  rotate: false
+  xy: 2, 17
+  size: 259, 348
+  orig: 261, 350
+  offset: 1, 1
+  index: -1
+甘草 拷贝
+  rotate: false
+  xy: 263, 17
+  size: 259, 348
+  orig: 261, 350
+  offset: 1, 1
+  index: -1

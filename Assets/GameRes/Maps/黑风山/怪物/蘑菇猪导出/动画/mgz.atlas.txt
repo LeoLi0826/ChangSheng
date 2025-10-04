@@ -1,0 +1,62 @@
+
+mgz.png
+size: 538,538
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mgz_10
+  rotate: false
+  xy: 2, 92
+  size: 399, 444
+  orig: 399, 444
+  offset: 0, 0
+  index: -1
+mgz_11
+  rotate: false
+  xy: 2, 2
+  size: 91, 88
+  orig: 93, 90
+  offset: 1, 1
+  index: -1
+mgz_12
+  rotate: false
+  xy: 95, 32
+  size: 86, 58
+  orig: 88, 60
+  offset: 1, 1
+  index: -1
+mgz_13
+  rotate: false
+  xy: 403, 83
+  size: 61, 45
+  orig: 63, 47
+  offset: 1, 1
+  index: -1
+mgz_14
+  rotate: false
+  xy: 183, 24
+  size: 78, 66
+  orig: 80, 68
+  offset: 1, 1
+  index: -1
+mgz_15
+  rotate: false
+  xy: 263, 27
+  size: 69, 63
+  orig: 69, 63
+  offset: 0, 0
+  index: -1
+mgz_16
+  rotate: true
+  xy: 403, 130
+  size: 406, 128
+  orig: 410, 134
+  offset: 2, 4
+  index: -1
+mgz_9
+  rotate: false
+  xy: 334, 31
+  size: 64, 59
+  orig: 64, 59
+  offset: 0, 0
+  index: -1

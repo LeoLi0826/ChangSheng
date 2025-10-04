@@ -1,0 +1,76 @@
+
+gz.png
+size: 1296,1296
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gz_0
+  rotate: true
+  xy: 1107, 911
+  size: 176, 154
+  orig: 177, 155
+  offset: 1, 1
+  index: -1
+gz_1
+  rotate: true
+  xy: 2, 264
+  size: 660, 680
+  orig: 662, 683
+  offset: 1, 2
+  index: -1
+gz_2
+  rotate: true
+  xy: 684, 144
+  size: 780, 329
+  orig: 780, 329
+  offset: 0, 0
+  index: -1
+gz_3
+  rotate: false
+  xy: 1015, 227
+  size: 245, 351
+  orig: 245, 351
+  offset: 0, 0
+  index: -1
+gz_4
+  rotate: true
+  xy: 2, 40
+  size: 222, 295
+  orig: 225, 295
+  offset: 0, 0
+  index: -1
+gz_5
+  rotate: false
+  xy: 1015, 580
+  size: 279, 329
+  orig: 279, 329
+  offset: 0, 0
+  index: -1
+gz_6
+  rotate: true
+  xy: 299, 148
+  size: 114, 145
+  orig: 116, 147
+  offset: 1, 1
+  index: -1
+gz_7
+  rotate: false
+  xy: 1107, 1089
+  size: 161, 205
+  orig: 162, 206
+  offset: 0, 0
+  index: -1
+gz_8
+  rotate: true
+  xy: 1015, 81
+  size: 144, 183
+  orig: 145, 184
+  offset: 1, 0
+  index: -1
+gz_9
+  rotate: false
+  xy: 2, 926
+  size: 1103, 368
+  orig: 1106, 370
+  offset: 2, 1
+  index: -1

@@ -1,0 +1,32 @@
+{
+    "name": "ET.ModelView",
+    "rootNamespace": "ET",
+    "references": [
+        "DamageNumbersPro",
+        "ET.Core",
+        "ET.Loader",
+        "ET.Model",
+        "ET.ReferenceCollector",
+        "ET.SourceGeneratorAttribute",
+        "ET.YIUIFramework",
+        "ET.YooAssets",
+        "Unity.Mathematics",
+        "Unity.TextMeshPro",
+        "AstarPathfindingProject",
+        "spine-unity",
+        "Unity.Cinemachine",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "INITED",
+        "IS_COMPILING || UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

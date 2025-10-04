@@ -1,0 +1,55 @@
+
+sj.png
+size: 2027,2027
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+11
+  rotate: false
+  xy: 1119, 659
+  size: 660, 1366
+  orig: 660, 1366
+  offset: 0, 0
+  index: -1
+22
+  rotate: false
+  xy: 1781, 1740
+  size: 167, 285
+  orig: 167, 285
+  offset: 0, 0
+  index: -1
+33
+  rotate: false
+  xy: 969, 28
+  size: 391, 629
+  orig: 391, 629
+  offset: 0, 0
+  index: -1
+44
+  rotate: true
+  xy: 1772, 124
+  size: 533, 253
+  orig: 533, 253
+  offset: 0, 0
+  index: -1
+sj_0
+  rotate: false
+  xy: 2, 1098
+  size: 1115, 927
+  orig: 1115, 927
+  offset: 0, 0
+  index: -1
+sj_1
+  rotate: true
+  xy: 2, 71
+  size: 1025, 965
+  orig: 1025, 965
+  offset: 0, 0
+  index: -1
+sj_2
+  rotate: true
+  xy: 1362, 101
+  size: 556, 408
+  orig: 556, 408
+  offset: 0, 0
+  index: -1

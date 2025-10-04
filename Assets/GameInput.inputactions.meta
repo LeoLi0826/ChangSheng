@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d6e665894f5fbc1448409581907ecdc3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 8404be70184654265930450def6a9037, type: 3}
+  generateWrapperCode: 1
+  wrapperCodePath: G:/ET/ET9_LeoGame/Packages/cn.etetet.statesync/Scripts/ModelView/Client/Input/GameInput.cs
+  wrapperClassName: 
+  wrapperCodeNamespace: ET.Client

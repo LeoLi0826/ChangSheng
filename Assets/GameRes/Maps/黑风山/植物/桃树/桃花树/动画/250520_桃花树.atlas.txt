@@ -1,0 +1,293 @@
+
+250520_桃花树.png
+size: 1611,1520
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+亮度对比度 1 拷贝 10
+  rotate: false
+  xy: 1399, 367
+  size: 111, 118
+  orig: 113, 121
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 11
+  rotate: false
+  xy: 158, 53
+  size: 161, 128
+  orig: 163, 130
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 12
+  rotate: false
+  xy: 1370, 251
+  size: 125, 114
+  orig: 127, 116
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 13
+  rotate: true
+  xy: 1399, 487
+  size: 156, 110
+  orig: 158, 112
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 14
+  rotate: true
+  xy: 1512, 465
+  size: 118, 97
+  orig: 121, 100
+  offset: 2, 1
+  index: -1
+亮度对比度 1 拷贝 15
+  rotate: false
+  xy: 1236, 376
+  size: 161, 128
+  orig: 163, 130
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 16
+  rotate: false
+  xy: 1117, 2
+  size: 116, 114
+  orig: 118, 116
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 17
+  rotate: false
+  xy: 321, 56
+  size: 161, 125
+  orig: 163, 127
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 18
+  rotate: false
+  xy: 484, 58
+  size: 121, 123
+  orig: 124, 126
+  offset: 2, 2
+  index: -1
+亮度对比度 1 拷贝 24
+  rotate: false
+  xy: 1236, 43
+  size: 89, 86
+  orig: 91, 88
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 25
+  rotate: false
+  xy: 1327, 43
+  size: 89, 86
+  orig: 91, 88
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 26
+  rotate: false
+  xy: 1472, 31
+  size: 89, 86
+  orig: 91, 88
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 27
+  rotate: false
+  xy: 1544, 1390
+  size: 61, 62
+  orig: 63, 64
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 28
+  rotate: false
+  xy: 2, 12
+  size: 154, 169
+  orig: 156, 171
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 29
+  rotate: false
+  xy: 1360, 136
+  size: 121, 113
+  orig: 123, 115
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 30
+  rotate: false
+  xy: 1544, 1139
+  size: 52, 59
+  orig: 54, 61
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 31
+  rotate: false
+  xy: 871, 3
+  size: 121, 113
+  orig: 123, 115
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 32
+  rotate: false
+  xy: 1544, 1200
+  size: 51, 62
+  orig: 53, 64
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 33
+  rotate: true
+  xy: 1512, 344
+  size: 119, 85
+  orig: 121, 88
+  offset: 1, 2
+  index: -1
+亮度对比度 1 拷贝 34
+  rotate: false
+  xy: 1483, 119
+  size: 121, 102
+  orig: 123, 104
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 35
+  rotate: true
+  xy: 1519, 698
+  size: 130, 87
+  orig: 132, 89
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 36
+  rotate: false
+  xy: 607, 31
+  size: 130, 85
+  orig: 132, 88
+  offset: 1, 2
+  index: -1
+亮度对比度 1 拷贝 37
+  rotate: false
+  xy: 739, 29
+  size: 130, 87
+  orig: 132, 89
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 38
+  rotate: false
+  xy: 994, 3
+  size: 121, 113
+  orig: 123, 115
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 39
+  rotate: true
+  xy: 1519, 930
+  size: 98, 90
+  orig: 100, 93
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 40
+  rotate: false
+  xy: 1236, 252
+  size: 132, 122
+  orig: 134, 124
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 41
+  rotate: true
+  xy: 1519, 830
+  size: 98, 90
+  orig: 100, 93
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 42
+  rotate: false
+  xy: 1544, 1083
+  size: 52, 54
+  orig: 55, 57
+  offset: 1, 2
+  index: -1
+亮度对比度 1 拷贝 43
+  rotate: false
+  xy: 1544, 1327
+  size: 60, 61
+  orig: 62, 64
+  offset: 1, 2
+  index: -1
+亮度对比度 1 拷贝 44
+  rotate: false
+  xy: 1418, 80
+  size: 52, 54
+  orig: 55, 57
+  offset: 1, 2
+  index: -1
+亮度对比度 1 拷贝 45
+  rotate: true
+  xy: 1544, 1454
+  size: 64, 65
+  orig: 66, 67
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 46
+  rotate: false
+  xy: 1544, 1264
+  size: 60, 61
+  orig: 62, 64
+  offset: 1, 2
+  index: -1
+亮度对比度 1 拷贝 47
+  rotate: false
+  xy: 711, 645
+  size: 806, 383
+  orig: 808, 385
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 52
+  rotate: false
+  xy: 711, 1030
+  size: 831, 488
+  orig: 833, 491
+  offset: 1, 2
+  index: -1
+亮度对比度 1 拷贝 53
+  rotate: false
+  xy: 646, 118
+  size: 588, 525
+  orig: 591, 527
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 54
+  rotate: false
+  xy: 2, 183
+  size: 642, 483
+  orig: 644, 485
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 56
+  rotate: false
+  xy: 2, 668
+  size: 707, 850
+  orig: 709, 852
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 6
+  rotate: true
+  xy: 1497, 223
+  size: 119, 105
+  orig: 121, 107
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 7
+  rotate: false
+  xy: 1519, 585
+  size: 89, 111
+  orig: 93, 113
+  offset: 2, 1
+  index: -1
+亮度对比度 1 拷贝 8
+  rotate: false
+  xy: 1236, 506
+  size: 161, 137
+  orig: 163, 139
+  offset: 1, 1
+  index: -1
+亮度对比度 1 拷贝 9
+  rotate: false
+  xy: 1236, 131
+  size: 122, 119
+  orig: 124, 122
+  offset: 1, 2
+  index: -1

@@ -1,0 +1,69 @@
+
+hysgz.png
+size: 1301,1301
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hysgz_1
+  rotate: true
+  xy: 2, 56
+  size: 869, 634
+  orig: 871, 637
+  offset: 1, 2
+  index: -1
+hysgz_2
+  rotate: true
+  xy: 638, 202
+  size: 723, 347
+  orig: 724, 352
+  offset: 0, 5
+  index: -1
+hysgz_3
+  rotate: false
+  xy: 987, 10
+  size: 244, 358
+  orig: 245, 359
+  offset: 0, 0
+  index: -1
+hysgz_4
+  rotate: true
+  xy: 987, 701
+  size: 224, 297
+  orig: 227, 297
+  offset: 0, 0
+  index: -1
+hysgz_5
+  rotate: false
+  xy: 987, 370
+  size: 279, 329
+  orig: 279, 329
+  offset: 0, 0
+  index: -1
+hysgz_6
+  rotate: false
+  xy: 1185, 1129
+  size: 114, 170
+  orig: 116, 171
+  offset: 1, 0
+  index: -1
+hysgz_7
+  rotate: false
+  xy: 638, 12
+  size: 149, 188
+  orig: 150, 189
+  offset: 0, 0
+  index: -1
+hysgz_8
+  rotate: false
+  xy: 789, 17
+  size: 145, 183
+  orig: 145, 184
+  offset: 0, 0
+  index: -1
+hysgz_9
+  rotate: false
+  xy: 2, 927
+  size: 1181, 372
+  orig: 1183, 374
+  offset: 1, 1
+  index: -1

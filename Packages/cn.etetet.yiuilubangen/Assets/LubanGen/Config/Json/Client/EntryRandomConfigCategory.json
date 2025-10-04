@@ -1,0 +1,119 @@
+[
+  {
+    "Id": 1,
+    "EntryRandMinCount": 1,
+    "EntryRandMaxCount": 1,
+    "SpecialEntryRandMinCount": 1,
+    "SpecialEntryRandMaxCount": 1,
+    "EntryLevel": 1,
+    "SpecialEntryLevel": 1
+  },
+  {
+    "Id": 2,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 1,
+    "SpecialEntryLevel": 1
+  },
+  {
+    "Id": 3,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 1,
+    "SpecialEntryLevel": 1
+  },
+  {
+    "Id": 4,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 2,
+    "SpecialEntryLevel": 2
+  },
+  {
+    "Id": 5,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 2,
+    "SpecialEntryLevel": 2
+  },
+  {
+    "Id": 6,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 2,
+    "SpecialEntryLevel": 2
+  },
+  {
+    "Id": 7,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 2,
+    "SpecialEntryLevel": 2
+  },
+  {
+    "Id": 8,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 3,
+    "SpecialEntryLevel": 3
+  },
+  {
+    "Id": 9,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 3,
+    "SpecialEntryLevel": 3
+  },
+  {
+    "Id": 10,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 3,
+    "SpecialEntryLevel": 3
+  },
+  {
+    "Id": 11,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 3,
+    "SpecialEntryLevel": 3
+  },
+  {
+    "Id": 12,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 3,
+    "SpecialEntryLevel": 3
+  },
+  {
+    "Id": 13,
+    "EntryRandMinCount": 2,
+    "EntryRandMaxCount": 2,
+    "SpecialEntryRandMinCount": 2,
+    "SpecialEntryRandMaxCount": 2,
+    "EntryLevel": 3,
+    "SpecialEntryLevel": 3
+  }
+]
