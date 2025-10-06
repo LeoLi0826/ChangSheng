@@ -19,7 +19,7 @@ namespace ET.Client
         [EntitySystem]
         private static void Destroy(this ET.Client.MonsterAttackComponent self)
         {
-            self.Target = null;
+            self.Target = default;
             TimerComponent timerComponent = self.Root().GetComponent<TimerComponent>();
             timerComponent.Remove(ref self.TimerId);
         }
@@ -55,7 +55,7 @@ namespace ET.Client
             Unit target = self.Target;
             if (target == null || target.IsDisposed)
             {
-                self.Target = null;
+                self.Target = default;
                 unit.SetAIUnitActionType(UnitActionType.Idle);
                 unit.SetMonsterActionType(MonsterActionType.Walk);
                // Debug.Log("怪物attack：222 ");
@@ -66,7 +66,7 @@ namespace ET.Client
             // Debug.Log("怪物attack：HP "+hp);
             if (!target.IsAlive())
             {
-                self.Target = null;
+                self.Target = default;
                 unit.SetMonsterActionType(MonsterActionType.Walk);
                 unit.SetAIUnitActionType(UnitActionType.Walk);
                 Debug.Log("怪物attack：333 ");
@@ -78,13 +78,13 @@ namespace ET.Client
             if (!self.AttackFlag)
             {
                 //超出范围
-                self.Target = null;
+                self.Target = default;
                 unit.SetAIUnitActionType(UnitActionType.Walk);
                 unit.SetMonsterActionType(MonsterActionType.Walk);
                 timerComponent.Remove(ref self.TimerId);
-                Debug.LogWarning("超出仇恨范围！！！");
-                Debug.LogWarning("玩家动画机状态"+unit.unitActionType.ToString());
-                Debug.LogWarning("怪物动画机状态"+unit.MonsterActionType.ToString());
+                // Debug.LogWarning("超出仇恨范围！！！");
+                // Debug.LogWarning("玩家动画机状态"+unit.unitActionType.ToString());
+                // Debug.LogWarning("怪物动画机状态"+unit.MonsterActionType.ToString());
                 return;
             }
 

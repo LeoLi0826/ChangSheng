@@ -161,29 +161,6 @@ namespace ET.Client
 
         }
 
-
-        [EntitySystem]
-        private static void Update(this MapGeneratorComponent self)
-        {
-            // if (self.FacingFlag == true)
-            // {
-            //     Debug.Log("我开始设置朝向: "+Camera.main.transform.rotation);
-            //     foreach (var temp in self.mapObjects)
-            //     {
-            //         temp.transform.rotation = Camera.main.transform.rotation;
-            //
-            //     }
-            //
-            //     self.FacingFlag = false;
-            // }
-        }
-
-        [EntitySystem]
-        private static void LateUpdate(this ET.Client.MapGeneratorComponent self)
-        {
-
-        }
-
         /// <summary>
         /// 生成地图
         /// </summary>

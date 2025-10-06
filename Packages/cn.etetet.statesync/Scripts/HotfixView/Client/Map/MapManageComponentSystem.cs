@@ -57,17 +57,6 @@ namespace ET.Client
             
         }
 
-        [EntitySystem]
-        private static void Update(this ET.Client.MapManageComponent self)
-        {
-
-        }
-        [EntitySystem]
-        private static void LateUpdate(this ET.Client.MapManageComponent self)
-        {
-
-        }
-
         //数据刷新 查找地图生成器
         public static async ETTask NewGenerateMap(this MapManageComponent self)
         {

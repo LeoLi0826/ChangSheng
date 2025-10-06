@@ -107,27 +107,27 @@ namespace ET.Client
         [EntitySystem]
         private static void Update(this ET.SkeletonAnimationComponent self)
         {
-            CheckFrameEvents(self);
-            if (self.IsLoop)
-            {
-                // Debug.Log("动画机1");
-                return;
-            }
-
-            if (!self.IsAnimation)
-            {
-                //  Debug.Log("动画机2");
-                return;
-            }
-
-            self.CurrentTime += Time.deltaTime;
-            if (self.CurrentTime < self.CurrentTrackEntry.AnimationEnd)
-            {
-                // Debug.Log("动画机3");
-                return;
-            }
-
-            self.IsAnimation = false;
+            // CheckFrameEvents(self);
+            // if (self.IsLoop)
+            // {
+            //     // Debug.Log("动画机1");
+            //     return;
+            // }
+            //
+            // if (!self.IsAnimation)
+            // {
+            //     //  Debug.Log("动画机2");
+            //     return;
+            // }
+            //
+            // self.CurrentTime += Time.deltaTime;
+            // if (self.CurrentTime < self.CurrentTrackEntry.AnimationEnd)
+            // {
+            //     // Debug.Log("动画机3");
+            //     return;
+            // }
+            //
+            // self.IsAnimation = false;
             //self.Play(SkeletonAnimationType.front_idle, true);
         }
 

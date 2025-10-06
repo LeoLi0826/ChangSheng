@@ -6,6 +6,7 @@ namespace ET.Client
     [ComponentOf(typeof(Unit))]
     public class MonsterMoveComponent : Entity, IAwake<Vector3>, IUpdate, IDestroy
     {
+        public EntityRef<Unit> Unit;
         public Seeker Seeker;
         public Path Path;
         public int CurrentPoint;

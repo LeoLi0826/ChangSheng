@@ -5,7 +5,7 @@ using UnityEngine;
 namespace ET.Client
 {
     [ComponentOf(typeof(Scene))]
-    public class MapGeneratorComponent : Entity, IAwake, IUpdate, ILateUpdate
+    public class MapGeneratorComponent : Entity, IAwake
     {
         public MapManage MapManage;
         

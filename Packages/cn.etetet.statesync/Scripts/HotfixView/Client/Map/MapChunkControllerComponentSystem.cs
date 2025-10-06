@@ -23,16 +23,6 @@ namespace ET.Client
         {
 
         }
-        [EntitySystem]
-        private static void Update(this ET.Client.MapChunkControllerComponent self)
-        {
-
-        }
-        [EntitySystem]
-        private static void LateUpdate(this ET.Client.MapChunkControllerComponent self)
-        {
-
-        }
 
         public static void SetActive(this ET.Client.MapChunkControllerComponent self, bool active)
         {
