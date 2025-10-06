@@ -26,443 +26,443 @@ namespace ET.Client
         private static void Update(this OperaComponent self)
         {
 
-            self.Move();
-            if (Input.GetMouseButtonDown(1))
-            {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, 1000, self.mapMask))
-                {
-                    //单机模式：直接在客户端处理寻路
-                    self.HandlePathfindingOffline(hit.point);
-                }
-            }
-
-            // if (Input.GetKeyDown(KeyCode.Q))
+            // self.Move();
+            // if (Input.GetMouseButtonDown(1))
             // {
-            //     self.Test1().Coroutine();
+            //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            //     RaycastHit hit;
+            //     if (Physics.Raycast(ray, out hit, 1000, self.mapMask))
+            //     {
+            //         //单机模式：直接在客户端处理寻路
+            //         self.HandlePathfindingOffline(hit.point);
+            //     }
             // }
-            //     
-            // if (Input.GetKeyDown(KeyCode.W))
-            // {
-            //     self.Test2().Coroutine();
-            // }
-
             //
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                CodeLoader.Instance.Reload();
-                return;
-            }
-
-            #region 地图切换
-
-
-
-            // //换地图
-            // if (Input.GetKeyDown(KeyCode.T))
-            // {
-            //     C2M_TransferMap c2MTransferMap = C2M_TransferMap.Create();
-            //     c2MTransferMap.Num = 1;
-            //     self.Root().GetComponent<ClientSenderComponent>().Call(c2MTransferMap).Coroutine();
-            //     
-            //     //打开相关ui界面
-            //     YIUIMgrComponent.Inst.Root.OpenPanelAsync<PlayerUIPanelComponent>().Coroutine();
-            //     YIUIMgrComponent.Inst.Root.OpenPanelAsync<QuickWindowPanelComponent>().Coroutine();
+            // // if (Input.GetKeyDown(KeyCode.Q))
+            // // {
+            // //     self.Test1().Coroutine();
+            // // }
+            // //     
+            // // if (Input.GetKeyDown(KeyCode.W))
+            // // {
+            // //     self.Test2().Coroutine();
+            // // }
             //
-            // }
-
-            //换地图（单机模式）
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                try
-                {
-                    Log.Debug("开始切换到Map1场景");
-                    
-                    // 清理当前场景的Map相关组件，避免NullReferenceException
-                    Scene currentScene = self.Root().CurrentScene();
-                    if (currentScene != null)
-                    {
-                        var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
-                        if (mapManageComponent != null)
-                        {
-                            Log.Debug("清理MapManageComponent");
-                            mapManageComponent.Dispose();
-                        }
-                        
-                        var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
-                        if (mapGeneratorComponent != null)
-                        {
-                            Log.Debug("清理MapGeneratorComponent");
-                            mapGeneratorComponent.Dispose();
-                        }
-                    }
-                    
-                    // 执行场景切换
-                    SceneChangeHelper.SceneChangeTo(self.Root(), "Map1").NoContext();
-                }
-                catch (System.Exception ex)
-                {
-                    Log.Error($"切换到Map1场景失败：{ex.Message}");
-                }
-            }
-
-            //换地图（单机模式）
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                try
-                {
-                    Log.Debug("开始切换到Map2场景");
-                    
-                    // 清理当前场景的Map相关组件，避免NullReferenceException
-                    Scene currentScene = self.Root().CurrentScene();
-                    if (currentScene != null)
-                    {
-                        var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
-                        if (mapManageComponent != null)
-                        {
-                            Log.Debug("清理MapManageComponent");
-                            mapManageComponent.Dispose();
-                        }
-                        
-                        var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
-                        if (mapGeneratorComponent != null)
-                        {
-                            Log.Debug("清理MapGeneratorComponent");
-                            mapGeneratorComponent.Dispose();
-                        }
-                    }
-                    
-                    // 执行场景切换
-                    SceneChangeHelper.SceneChangeTo(self.Root(), "Map2").NoContext();
-                }
-                catch (System.Exception ex)
-                {
-                    Log.Error($"切换到Map2场景失败：{ex.Message}");
-                }
-            }
-
-            //换地图（单机模式）
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                try
-                {
-                    Log.Debug("开始切换到Map3场景");
-                    
-                    // 清理当前场景的Map相关组件，避免NullReferenceException
-                    Scene currentScene = self.Root().CurrentScene();
-                    if (currentScene != null)
-                    {
-                        var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
-                        if (mapManageComponent != null)
-                        {
-                            Log.Debug("清理MapManageComponent");
-                            mapManageComponent.Dispose();
-                        }
-                        
-                        var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
-                        if (mapGeneratorComponent != null)
-                        {
-                            Log.Debug("清理MapGeneratorComponent");
-                            mapGeneratorComponent.Dispose();
-                        }
-                    }
-                    
-                    // 执行场景切换
-                    SceneChangeHelper.SceneChangeTo(self.Root(), "Map3").NoContext();
-                }
-                catch (System.Exception ex)
-                {
-                    Log.Error($"切换到Map3场景失败：{ex.Message}");
-                }
-            }
-
-            //换地图
-            if (Input.GetKeyDown(KeyCode.Alpha4))
-            {
-                try
-                {
-                    Log.Debug("开始切换到Map4场景");
-                    
-                    // 清理当前场景的Map相关组件，避免NullReferenceException
-                    Scene currentScene = self.Root().CurrentScene();
-                    if (currentScene != null)
-                    {
-                        var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
-                        if (mapManageComponent != null)
-                        {
-                            Log.Debug("清理MapManageComponent");
-                            mapManageComponent.Dispose();
-                        }
-                        
-                        var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
-                        if (mapGeneratorComponent != null)
-                        {
-                            Log.Debug("清理MapGeneratorComponent");
-                            mapGeneratorComponent.Dispose();
-                        }
-                    }
-                    
-                    // 执行场景切换
-                    SceneChangeHelper.SceneChangeTo(self.Root(), "Map4").NoContext();
-                }
-                catch (System.Exception ex)
-                {
-                    Log.Error($"切换到Map3场景失败：{ex.Message}");
-                }
-            }
-            //换地图
-            if (Input.GetKeyDown(KeyCode.Alpha5))
-            {
-                try
-                {
-                    Log.Debug("开始切换到Map5场景");
-                    
-                    // 清理当前场景的Map相关组件，避免NullReferenceException
-                    Scene currentScene = self.Root().CurrentScene();
-                    if (currentScene != null)
-                    {
-                        var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
-                        if (mapManageComponent != null)
-                        {
-                            Log.Debug("清理MapManageComponent");
-                            mapManageComponent.Dispose();
-                        }
-                        
-                        var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
-                        if (mapGeneratorComponent != null)
-                        {
-                            Log.Debug("清理MapGeneratorComponent");
-                            mapGeneratorComponent.Dispose();
-                        }
-                    }
-                    
-                    // 执行场景切换
-                    SceneChangeHelper.SceneChangeTo(self.Root(), "Map5").NoContext();
-                }
-                catch (System.Exception ex)
-                {
-                    Log.Error($"切换到Map3场景失败：{ex.Message}");
-                }
-            }
-            //换地图
-            if (Input.GetKeyDown(KeyCode.Alpha6))
-            {
-                try
-                {
-                    Log.Debug("开始切换到Map6场景");
-                    
-                    // 清理当前场景的Map相关组件，避免NullReferenceException
-                    Scene currentScene = self.Root().CurrentScene();
-                    if (currentScene != null)
-                    {
-                        var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
-                        if (mapManageComponent != null)
-                        {
-                            Log.Debug("清理MapManageComponent");
-                            mapManageComponent.Dispose();
-                        }
-                        
-                        var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
-                        if (mapGeneratorComponent != null)
-                        {
-                            Log.Debug("清理MapGeneratorComponent");
-                            mapGeneratorComponent.Dispose();
-                        }
-                    }
-                    
-                    // 执行场景切换
-                    SceneChangeHelper.SceneChangeTo(self.Root(), "Map6").NoContext();
-                }
-                catch (System.Exception ex)
-                {
-                    Log.Error($"切换到Map6场景失败：{ex.Message}");
-                }
-            }
-            // //换地图
-            // if (Input.GetKeyDown(KeyCode.Alpha7))
+            // //
+            // if (Input.GetKeyDown(KeyCode.R))
             // {
-            //     try
-            //     {
-            //         Log.Debug("开始切换到Map7场景");
-            //         
-            //         // 清理当前场景的Map相关组件，避免NullReferenceException
-            //         Scene currentScene = self.Root().CurrentScene();
-            //         if (currentScene != null)
-            //         {
-            //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
-            //             if (mapManageComponent != null)
-            //             {
-            //                 Log.Debug("清理MapManageComponent");
-            //                 mapManageComponent.Dispose();
-            //             }
-            //             
-            //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
-            //             if (mapGeneratorComponent != null)
-            //             {
-            //                 Log.Debug("清理MapGeneratorComponent");
-            //                 mapGeneratorComponent.Dispose();
-            //             }
-            //         }
-            //         
-            //         // 执行场景切换
-            //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map7").Coroutine();
-            //     }
-            //     catch (System.Exception ex)
-            //     {
-            //         Log.Error($"切换到Map7场景失败：{ex.Message}");
-            //     }
-            // }
-            // //换地图
-            // if (Input.GetKeyDown(KeyCode.Alpha8))
-            // {
-            //     try
-            //     {
-            //         Log.Debug("开始切换到Map8场景");
-            //         
-            //         // 清理当前场景的Map相关组件，避免NullReferenceException
-            //         Scene currentScene = self.Root().CurrentScene();
-            //         if (currentScene != null)
-            //         {
-            //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
-            //             if (mapManageComponent != null)
-            //             {
-            //                 Log.Debug("清理MapManageComponent");
-            //                 mapManageComponent.Dispose();
-            //             }
-            //             
-            //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
-            //             if (mapGeneratorComponent != null)
-            //             {
-            //                 Log.Debug("清理MapGeneratorComponent");
-            //                 mapGeneratorComponent.Dispose();
-            //             }
-            //         }
-            //         
-            //         // 执行场景切换
-            //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map8").Coroutine();
-            //     }
-            //     catch (System.Exception ex)
-            //     {
-            //         Log.Error($"切换到Map8场景失败：{ex.Message}");
-            //     }
-            // }
-            #endregion
-
-
-            //打开
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                //打开相关ui界面
-               
-                self.Scene().YIUIRoot().OpenPanelAsync<PlayerUIPanelComponent>().NoContext();
-                self.Scene().YIUIRoot().OpenPanelAsync<QuickWindowPanelComponent>().NoContext();
-
-            }
-
-            //创建敌人
-            if (Input.GetKeyDown(KeyCode.N))
-            {
-                //AdventureComponentSystem 逻辑代码在这里
-                Log.Debug("我按下了N 创建敌人～");
-                //打开相关ui界面
-                //先发送信息到服务端 把背包里的新物品卖掉 
-                // C2M_NewResource C2M_newResource = C2M_NewResource.Create();
-                // //C2M_sell.ItemInfo = temp.ToMessage(true);
-                // //C2M_newResource.UnitId = self.Root().GetComponent<PlayerComponent>().MyId ;;
-                // self.Root().GetComponent<ClientSenderComponent>().Send(C2M_newResource);
-
-
-                self.Root().GetComponent<AdventureComponent>().StartAdventure(1).NoContext();
-            }
-
-
-            if (Input.GetKeyDown(KeyCode.N))
-            {
-
-                //AdventureComponentSystem 逻辑代码在这里
-                Log.Debug("我按下了N 创建能量～");
-                //打开相关ui界面
-                //先发送信息到服务端 把背包里的新物品卖掉 
-                // C2M_NewResource C2M_newResource = C2M_NewResource.Create();
-                // //C2M_sell.ItemInfo = temp.ToMessage(true);
-                // //C2M_newResource.UnitId = self.Root().GetComponent<PlayerComponent>().MyId ;;
-                // self.Root().GetComponent<ClientSenderComponent>().Send(C2M_newResource);
-
-                //创建资源
-                self.Root().GetComponent<AdventureComponent>().StartAdventure(2).NoContext();
-            }
-
-            //测试生成法宝到物品栏
-            if (Input.GetKeyDown(KeyCode.J))
-            {
-                // 从1001-1050中随机选择一个数值
-                int randomConfigId = UnityEngine.Random.Range(1002, 1017);
-                //获取法宝那边 也得改
-
-                //固定获取 宝莲灯
-                Test1(self, 1008).NoContext();
-            }
-            //测试生成材料到物品栏
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                // 从1001-1050中随机选择一个数值
-                int randomConfigId = UnityEngine.Random.Range(1053, 1070);
-                Test1(self, randomConfigId).NoContext();
-            }
-
-
-            if (Input.GetKeyDown(KeyCode.M))
-            {
-                //法力减少测试
-                // self.DynamicEvent(self.Root(),new ManaReduceRefresh() { date = 30 }).NoContext();
-            
-               //self.Root().GetComponent<QuickWindowPanelComponent>().ManaReduce(30);
-            
-            }
-
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                //法力增加测试
-                // self.DynamicEvent(self.Root(),new ManaAddRefresh() { date = 500 }).NoContext();
-                //生命减少测试
-               //self.Root().DynamicEvent(self.Root(),new LifeReduceRefresh() { date = 30 }).Coroutine();
-            
-                //self.Root().GetComponent<QuickWindowPanelComponent>().LifeReduce(10);
-            
-            }
-
-            //天劫将领测试
-            if (Input.GetKeyDown(KeyCode.Y))
-            {
-                // self.DynamicEvent(self.Root(), new CalamityAdd() { day = 30 }).NoContext();
-
-                //self.Root().GetComponent<QuickWindowPanelComponent>().LifeReduce(10);
-
-            }
-
-            //天劫将领测试
-            if (Input.GetKeyDown(KeyCode.U))
-            {
-                // self.DynamicEvent(self.Root(), new CalamityReduce() { day = 30 }).NoContext();
-
-                //self.Root().GetComponent<QuickWindowPanelComponent>().LifeReduce(10);
-
-            }
-            
-            //移动
-            //self.Handel();
-
-
-            //每帧把当前帧收集的操作发送给服务端，随后清除
-            // if (self.OperateInfos.Count == 0)
+            //     CodeLoader.Instance.Reload();
             //     return;
-            // self.OperateInfosTemp.Clear();
-            // self.OperateInfosTemp.AddRange(self.OperateInfos);
-            // C2Room_Operation c2RoomOperation = C2Room_Operation.Create();
-            // c2RoomOperation.OperateInfos = self.OperateInfosTemp;
-            // self.Root().GetComponent<ClientSenderComponent>().Send(c2RoomOperation);
-            // self.OperateInfos.Clear();
+            // }
+            //
+            // #region 地图切换
+            //
+            //
+            //
+            // // //换地图
+            // // if (Input.GetKeyDown(KeyCode.T))
+            // // {
+            // //     C2M_TransferMap c2MTransferMap = C2M_TransferMap.Create();
+            // //     c2MTransferMap.Num = 1;
+            // //     self.Root().GetComponent<ClientSenderComponent>().Call(c2MTransferMap).Coroutine();
+            // //     
+            // //     //打开相关ui界面
+            // //     YIUIMgrComponent.Inst.Root.OpenPanelAsync<PlayerUIPanelComponent>().Coroutine();
+            // //     YIUIMgrComponent.Inst.Root.OpenPanelAsync<QuickWindowPanelComponent>().Coroutine();
+            // //
+            // // }
+            //
+            // //换地图（单机模式）
+            // if (Input.GetKeyDown(KeyCode.Alpha1))
+            // {
+            //     try
+            //     {
+            //         Log.Debug("开始切换到Map1场景");
+            //         
+            //         // 清理当前场景的Map相关组件，避免NullReferenceException
+            //         Scene currentScene = self.Root().CurrentScene();
+            //         if (currentScene != null)
+            //         {
+            //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
+            //             if (mapManageComponent != null)
+            //             {
+            //                 Log.Debug("清理MapManageComponent");
+            //                 mapManageComponent.Dispose();
+            //             }
+            //             
+            //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
+            //             if (mapGeneratorComponent != null)
+            //             {
+            //                 Log.Debug("清理MapGeneratorComponent");
+            //                 mapGeneratorComponent.Dispose();
+            //             }
+            //         }
+            //         
+            //         // 执行场景切换
+            //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map1").NoContext();
+            //     }
+            //     catch (System.Exception ex)
+            //     {
+            //         Log.Error($"切换到Map1场景失败：{ex.Message}");
+            //     }
+            // }
+            //
+            // //换地图（单机模式）
+            // if (Input.GetKeyDown(KeyCode.Alpha2))
+            // {
+            //     try
+            //     {
+            //         Log.Debug("开始切换到Map2场景");
+            //         
+            //         // 清理当前场景的Map相关组件，避免NullReferenceException
+            //         Scene currentScene = self.Root().CurrentScene();
+            //         if (currentScene != null)
+            //         {
+            //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
+            //             if (mapManageComponent != null)
+            //             {
+            //                 Log.Debug("清理MapManageComponent");
+            //                 mapManageComponent.Dispose();
+            //             }
+            //             
+            //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
+            //             if (mapGeneratorComponent != null)
+            //             {
+            //                 Log.Debug("清理MapGeneratorComponent");
+            //                 mapGeneratorComponent.Dispose();
+            //             }
+            //         }
+            //         
+            //         // 执行场景切换
+            //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map2").NoContext();
+            //     }
+            //     catch (System.Exception ex)
+            //     {
+            //         Log.Error($"切换到Map2场景失败：{ex.Message}");
+            //     }
+            // }
+            //
+            // //换地图（单机模式）
+            // if (Input.GetKeyDown(KeyCode.Alpha3))
+            // {
+            //     try
+            //     {
+            //         Log.Debug("开始切换到Map3场景");
+            //         
+            //         // 清理当前场景的Map相关组件，避免NullReferenceException
+            //         Scene currentScene = self.Root().CurrentScene();
+            //         if (currentScene != null)
+            //         {
+            //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
+            //             if (mapManageComponent != null)
+            //             {
+            //                 Log.Debug("清理MapManageComponent");
+            //                 mapManageComponent.Dispose();
+            //             }
+            //             
+            //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
+            //             if (mapGeneratorComponent != null)
+            //             {
+            //                 Log.Debug("清理MapGeneratorComponent");
+            //                 mapGeneratorComponent.Dispose();
+            //             }
+            //         }
+            //         
+            //         // 执行场景切换
+            //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map3").NoContext();
+            //     }
+            //     catch (System.Exception ex)
+            //     {
+            //         Log.Error($"切换到Map3场景失败：{ex.Message}");
+            //     }
+            // }
+            //
+            // //换地图
+            // if (Input.GetKeyDown(KeyCode.Alpha4))
+            // {
+            //     try
+            //     {
+            //         Log.Debug("开始切换到Map4场景");
+            //         
+            //         // 清理当前场景的Map相关组件，避免NullReferenceException
+            //         Scene currentScene = self.Root().CurrentScene();
+            //         if (currentScene != null)
+            //         {
+            //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
+            //             if (mapManageComponent != null)
+            //             {
+            //                 Log.Debug("清理MapManageComponent");
+            //                 mapManageComponent.Dispose();
+            //             }
+            //             
+            //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
+            //             if (mapGeneratorComponent != null)
+            //             {
+            //                 Log.Debug("清理MapGeneratorComponent");
+            //                 mapGeneratorComponent.Dispose();
+            //             }
+            //         }
+            //         
+            //         // 执行场景切换
+            //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map4").NoContext();
+            //     }
+            //     catch (System.Exception ex)
+            //     {
+            //         Log.Error($"切换到Map3场景失败：{ex.Message}");
+            //     }
+            // }
+            // //换地图
+            // if (Input.GetKeyDown(KeyCode.Alpha5))
+            // {
+            //     try
+            //     {
+            //         Log.Debug("开始切换到Map5场景");
+            //         
+            //         // 清理当前场景的Map相关组件，避免NullReferenceException
+            //         Scene currentScene = self.Root().CurrentScene();
+            //         if (currentScene != null)
+            //         {
+            //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
+            //             if (mapManageComponent != null)
+            //             {
+            //                 Log.Debug("清理MapManageComponent");
+            //                 mapManageComponent.Dispose();
+            //             }
+            //             
+            //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
+            //             if (mapGeneratorComponent != null)
+            //             {
+            //                 Log.Debug("清理MapGeneratorComponent");
+            //                 mapGeneratorComponent.Dispose();
+            //             }
+            //         }
+            //         
+            //         // 执行场景切换
+            //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map5").NoContext();
+            //     }
+            //     catch (System.Exception ex)
+            //     {
+            //         Log.Error($"切换到Map3场景失败：{ex.Message}");
+            //     }
+            // }
+            // //换地图
+            // if (Input.GetKeyDown(KeyCode.Alpha6))
+            // {
+            //     try
+            //     {
+            //         Log.Debug("开始切换到Map6场景");
+            //         
+            //         // 清理当前场景的Map相关组件，避免NullReferenceException
+            //         Scene currentScene = self.Root().CurrentScene();
+            //         if (currentScene != null)
+            //         {
+            //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
+            //             if (mapManageComponent != null)
+            //             {
+            //                 Log.Debug("清理MapManageComponent");
+            //                 mapManageComponent.Dispose();
+            //             }
+            //             
+            //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
+            //             if (mapGeneratorComponent != null)
+            //             {
+            //                 Log.Debug("清理MapGeneratorComponent");
+            //                 mapGeneratorComponent.Dispose();
+            //             }
+            //         }
+            //         
+            //         // 执行场景切换
+            //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map6").NoContext();
+            //     }
+            //     catch (System.Exception ex)
+            //     {
+            //         Log.Error($"切换到Map6场景失败：{ex.Message}");
+            //     }
+            // }
+            // // //换地图
+            // // if (Input.GetKeyDown(KeyCode.Alpha7))
+            // // {
+            // //     try
+            // //     {
+            // //         Log.Debug("开始切换到Map7场景");
+            // //         
+            // //         // 清理当前场景的Map相关组件，避免NullReferenceException
+            // //         Scene currentScene = self.Root().CurrentScene();
+            // //         if (currentScene != null)
+            // //         {
+            // //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
+            // //             if (mapManageComponent != null)
+            // //             {
+            // //                 Log.Debug("清理MapManageComponent");
+            // //                 mapManageComponent.Dispose();
+            // //             }
+            // //             
+            // //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
+            // //             if (mapGeneratorComponent != null)
+            // //             {
+            // //                 Log.Debug("清理MapGeneratorComponent");
+            // //                 mapGeneratorComponent.Dispose();
+            // //             }
+            // //         }
+            // //         
+            // //         // 执行场景切换
+            // //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map7").Coroutine();
+            // //     }
+            // //     catch (System.Exception ex)
+            // //     {
+            // //         Log.Error($"切换到Map7场景失败：{ex.Message}");
+            // //     }
+            // // }
+            // // //换地图
+            // // if (Input.GetKeyDown(KeyCode.Alpha8))
+            // // {
+            // //     try
+            // //     {
+            // //         Log.Debug("开始切换到Map8场景");
+            // //         
+            // //         // 清理当前场景的Map相关组件，避免NullReferenceException
+            // //         Scene currentScene = self.Root().CurrentScene();
+            // //         if (currentScene != null)
+            // //         {
+            // //             var mapManageComponent = currentScene.GetComponent<MapManageComponent>();
+            // //             if (mapManageComponent != null)
+            // //             {
+            // //                 Log.Debug("清理MapManageComponent");
+            // //                 mapManageComponent.Dispose();
+            // //             }
+            // //             
+            // //             var mapGeneratorComponent = currentScene.GetComponent<MapGeneratorComponent>();
+            // //             if (mapGeneratorComponent != null)
+            // //             {
+            // //                 Log.Debug("清理MapGeneratorComponent");
+            // //                 mapGeneratorComponent.Dispose();
+            // //             }
+            // //         }
+            // //         
+            // //         // 执行场景切换
+            // //         SceneChangeHelper.SceneChangeTo(self.Root(), "Map8").Coroutine();
+            // //     }
+            // //     catch (System.Exception ex)
+            // //     {
+            // //         Log.Error($"切换到Map8场景失败：{ex.Message}");
+            // //     }
+            // // }
+            // #endregion
+            //
+            //
+            // //打开
+            // if (Input.GetKeyDown(KeyCode.P))
+            // {
+            //     //打开相关ui界面
+            //    
+            //     self.Scene().YIUIRoot().OpenPanelAsync<PlayerUIPanelComponent>().NoContext();
+            //     self.Scene().YIUIRoot().OpenPanelAsync<QuickWindowPanelComponent>().NoContext();
+            //
+            // }
+            //
+            // //创建敌人
+            // if (Input.GetKeyDown(KeyCode.N))
+            // {
+            //     //AdventureComponentSystem 逻辑代码在这里
+            //     Log.Debug("我按下了N 创建敌人～");
+            //     //打开相关ui界面
+            //     //先发送信息到服务端 把背包里的新物品卖掉 
+            //     // C2M_NewResource C2M_newResource = C2M_NewResource.Create();
+            //     // //C2M_sell.ItemInfo = temp.ToMessage(true);
+            //     // //C2M_newResource.UnitId = self.Root().GetComponent<PlayerComponent>().MyId ;;
+            //     // self.Root().GetComponent<ClientSenderComponent>().Send(C2M_newResource);
+            //
+            //
+            //     self.Root().GetComponent<AdventureComponent>().StartAdventure(1).NoContext();
+            // }
+            //
+            //
+            // if (Input.GetKeyDown(KeyCode.N))
+            // {
+            //
+            //     //AdventureComponentSystem 逻辑代码在这里
+            //     Log.Debug("我按下了N 创建能量～");
+            //     //打开相关ui界面
+            //     //先发送信息到服务端 把背包里的新物品卖掉 
+            //     // C2M_NewResource C2M_newResource = C2M_NewResource.Create();
+            //     // //C2M_sell.ItemInfo = temp.ToMessage(true);
+            //     // //C2M_newResource.UnitId = self.Root().GetComponent<PlayerComponent>().MyId ;;
+            //     // self.Root().GetComponent<ClientSenderComponent>().Send(C2M_newResource);
+            //
+            //     //创建资源
+            //     self.Root().GetComponent<AdventureComponent>().StartAdventure(2).NoContext();
+            // }
+            //
+            // //测试生成法宝到物品栏
+            // if (Input.GetKeyDown(KeyCode.J))
+            // {
+            //     // 从1001-1050中随机选择一个数值
+            //     int randomConfigId = UnityEngine.Random.Range(1002, 1017);
+            //     //获取法宝那边 也得改
+            //
+            //     //固定获取 宝莲灯
+            //     Test1(self, 1008).NoContext();
+            // }
+            // //测试生成材料到物品栏
+            // if (Input.GetKeyDown(KeyCode.H))
+            // {
+            //     // 从1001-1050中随机选择一个数值
+            //     int randomConfigId = UnityEngine.Random.Range(1053, 1070);
+            //     Test1(self, randomConfigId).NoContext();
+            // }
+            //
+            //
+            // if (Input.GetKeyDown(KeyCode.M))
+            // {
+            //     //法力减少测试
+            //     // self.DynamicEvent(self.Root(),new ManaReduceRefresh() { date = 30 }).NoContext();
+            //
+            //    //self.Root().GetComponent<QuickWindowPanelComponent>().ManaReduce(30);
+            //
+            // }
+            //
+            // if (Input.GetKeyDown(KeyCode.L))
+            // {
+            //     //法力增加测试
+            //     // self.DynamicEvent(self.Root(),new ManaAddRefresh() { date = 500 }).NoContext();
+            //     //生命减少测试
+            //    //self.Root().DynamicEvent(self.Root(),new LifeReduceRefresh() { date = 30 }).Coroutine();
+            //
+            //     //self.Root().GetComponent<QuickWindowPanelComponent>().LifeReduce(10);
+            //
+            // }
+            //
+            // //天劫将领测试
+            // if (Input.GetKeyDown(KeyCode.Y))
+            // {
+            //     // self.DynamicEvent(self.Root(), new CalamityAdd() { day = 30 }).NoContext();
+            //
+            //     //self.Root().GetComponent<QuickWindowPanelComponent>().LifeReduce(10);
+            //
+            // }
+            //
+            // //天劫将领测试
+            // if (Input.GetKeyDown(KeyCode.U))
+            // {
+            //     // self.DynamicEvent(self.Root(), new CalamityReduce() { day = 30 }).NoContext();
+            //
+            //     //self.Root().GetComponent<QuickWindowPanelComponent>().LifeReduce(10);
+            //
+            // }
+            //
+            // //移动
+            // //self.Handel();
+            //
+            //
+            // //每帧把当前帧收集的操作发送给服务端，随后清除
+            // // if (self.OperateInfos.Count == 0)
+            // //     return;
+            // // self.OperateInfosTemp.Clear();
+            // // self.OperateInfosTemp.AddRange(self.OperateInfos);
+            // // C2Room_Operation c2RoomOperation = C2Room_Operation.Create();
+            // // c2RoomOperation.OperateInfos = self.OperateInfosTemp;
+            // // self.Root().GetComponent<ClientSenderComponent>().Send(c2RoomOperation);
+            // // self.OperateInfos.Clear();
         }
 
         private static async ETTask Test1(this OperaComponent self, int configId)

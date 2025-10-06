@@ -30,54 +30,54 @@ namespace ET.Client
             //     Debug.Log("敌人ui 找到怪物动画机");
             // }
             // 添加事件桥接组件
-            var bridge = gameObject.GetComponent<SkeletonAnimationEventBridge>();
-            if (bridge == null)
-            {
-                bridge = gameObject.AddComponent<SkeletonAnimationEventBridge>();
-            }
+            // var bridge = gameObject.GetComponent<SkeletonAnimationEventBridge>();
+            // if (bridge == null)
+            // {
+            //     bridge = gameObject.AddComponent<SkeletonAnimationEventBridge>();
+            // }
 
             // 防止重复注册事件监听器
-            if (!self.IsEventListenerRegistered)
-            {
-                self.SkeletonAnimation.AnimationState.Event += (trackEntry, e) =>
-            {
-                Debug.Log($"动画事件: {e.Data.Name}, 时间: {e.Time}");
-
-                // 事件去重机制：防止短时间内重复处理同一事件
-                string eventKey = $"{unit.Id}_{e.Data.Name}"; // 使用怪物ID+事件名作为防抖键
-                float currentTime = UnityEngine.Time.time; // 使用Unity时间
-
-                Debug.Log($"[防抖检查] 事件: {eventKey}, 当前时间: {currentTime:F3}");
-
-                if (self.LastEventTriggerTime.ContainsKey(eventKey))
-                {
-                    float timeDiff = currentTime - self.LastEventTriggerTime[eventKey];
-                    Debug.Log($"[防抖检查] 上次触发时间: {self.LastEventTriggerTime[eventKey]:F3}, 时间间隔: {timeDiff:F3}秒");
-
-                    if (timeDiff < AISkeletonAnimationComponent.EVENT_DEBOUNCE_INTERVAL)
-                    {
-                        return;
-                    }
-                }
-
-                self.LastEventTriggerTime[eventKey] = currentTime;
-
-                // 发布动画事件到事件系统，让攻击组件自己处理
-                self.PublishAnimationEvent(unit, e.Data.Name, e.Time);
-            };
-            
-                self.IsEventListenerRegistered = true;
-                Debug.Log($"怪物[{unit.Id}]事件监听器注册完成");
-            }
-            else
-            {
-                Debug.Log($"怪物[{unit.Id}]事件监听器已注册，跳过重复注册");
-            }
+            // if (!self.IsEventListenerRegistered)
+            // {
+            //     self.SkeletonAnimation.AnimationState.Event += (trackEntry, e) =>
+            //     {
+            //         Debug.Log($"动画事件: {e.Data.Name}, 时间: {e.Time}");
+            //
+            //         // 事件去重机制：防止短时间内重复处理同一事件
+            //         string eventKey = $"{unit.Id}_{e.Data.Name}"; // 使用怪物ID+事件名作为防抖键
+            //         float currentTime = UnityEngine.Time.time; // 使用Unity时间
+            //
+            //         Debug.Log($"[防抖检查] 事件: {eventKey}, 当前时间: {currentTime:F3}");
+            //
+            //         if (self.LastEventTriggerTime.ContainsKey(eventKey))
+            //         {
+            //             float timeDiff = currentTime - self.LastEventTriggerTime[eventKey];
+            //             Debug.Log($"[防抖检查] 上次触发时间: {self.LastEventTriggerTime[eventKey]:F3}, 时间间隔: {timeDiff:F3}秒");
+            //
+            //             if (timeDiff < AISkeletonAnimationComponent.EVENT_DEBOUNCE_INTERVAL)
+            //             {
+            //                 return;
+            //             }
+            //         }
+            //
+            //         self.LastEventTriggerTime[eventKey] = currentTime;
+            //
+            //         // 发布动画事件到事件系统，让攻击组件自己处理
+            //         self.PublishAnimationEvent(unit, e.Data.Name, e.Time);
+            //     };
+            //
+            //     self.IsEventListenerRegistered = true;
+            //     Debug.Log($"怪物[{unit.Id}]事件监听器注册完成");
+            // }
+            // else
+            // {
+            //     Debug.Log($"怪物[{unit.Id}]事件监听器已注册，跳过重复注册");
+            // }
 
             // 动画组件不再需要直接引用攻击组件
             Debug.Log($"AISkeletonAnimationComponent 初始化完成，Unit: {unit.Id}");
 
-            self.EventBridge = bridge;
+            // self.EventBridge = bridge;
 
             self.IsAnimation = false;
             self.Play(SkeletonAnimationType.front_idle, true);
@@ -94,25 +94,25 @@ namespace ET.Client
         [EntitySystem]
         private static void Update(this ET.AISkeletonAnimationComponent self)
         {
-            CheckFrameEvents(self);
-            if (self.IsLoop)
-            {
-                return;
-            }
-
-            if (!self.IsAnimation)
-            {
-                return;
-            }
-
-            self.CurrentTime += Time.deltaTime;
-            if (self.CurrentTime < self.CurrentTrackEntry.AnimationEnd)
-            {
-                return;
-            }
-
-            self.IsAnimation = false;
-            self.CurrentTrackEntry = null; // 动画结束时清空 CurrentTrackEntry
+            // CheckFrameEvents(self);
+            // if (self.IsLoop)
+            // {
+            //     return;
+            // }
+            //
+            // if (!self.IsAnimation)
+            // {
+            //     return;
+            // }
+            //
+            // self.CurrentTime += Time.deltaTime;
+            // if (self.CurrentTime < self.CurrentTrackEntry.AnimationEnd)
+            // {
+            //     return;
+            // }
+            //
+            // self.IsAnimation = false;
+            // self.CurrentTrackEntry = null; // 动画结束时清空 CurrentTrackEntry
         }
 
         [EntitySystem]
@@ -193,8 +193,6 @@ namespace ET.Client
 
         public static bool Play(this AISkeletonAnimationComponent self, SkeletonAnimationType type, bool loop)
         {
-            var unit = self.GetParent<Unit>();
-
             // 检查 SkeletonAnimation 是否为空
             if (self.SkeletonAnimation == null)
             {

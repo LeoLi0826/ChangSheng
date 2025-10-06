@@ -33,7 +33,7 @@ namespace ET
             self.player = unit.GetComponent<GameObjectComponent>().GameObject;
             //这里和玩家不一样
             self.rigidbody = self.player.GetComponent<Rigidbody>();
-            self.attackComponent = unit.GetComponent<AttackComponent>();
+            // self.attackComponent = unit.GetComponent<AttackComponent>();
 
              self.timer = self.Root().GetComponent<TimerComponent>();
             

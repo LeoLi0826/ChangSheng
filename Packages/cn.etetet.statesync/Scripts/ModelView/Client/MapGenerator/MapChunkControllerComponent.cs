@@ -5,7 +5,7 @@ using UnityEngine;
 namespace ET.Client
 {
     [ChildOf(typeof(MapManageComponent))]
-    public class MapChunkControllerComponent : Entity, IAwake, IUpdate, ILateUpdate
+    public class MapChunkControllerComponent : Entity, IAwake
     {
         public Vector2Int ChunkIndex;// { get; private set; }
         public List<EntityRef<MapRegionUnit>> MapRegionUnitList = new List<EntityRef<MapRegionUnit>>();

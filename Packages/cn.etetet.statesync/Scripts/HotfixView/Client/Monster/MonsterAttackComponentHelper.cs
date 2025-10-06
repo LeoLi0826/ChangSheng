@@ -141,7 +141,7 @@ namespace ET.Client
             if (normalAttack != null)
             {
                 normalAttack.Attack(target);
-                Debug.Log($"调用小怪物攻击: {unit.Id} -> {target?.Id}");
+                // Debug.Log($"调用小怪物攻击: {unit.Id} -> {target?.Id}");
                 return;
             }
             

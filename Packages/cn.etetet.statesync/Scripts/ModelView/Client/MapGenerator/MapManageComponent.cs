@@ -12,7 +12,7 @@ namespace ET.Client
     
     
     [ComponentOf(typeof(Scene))]
-    public class MapManageComponent: Entity, IAwake, IUpdate, ILateUpdate, IDestroy
+    public class MapManageComponent: Entity, IAwake, IDestroy
     {
 
         public long TimerId;

@@ -31,20 +31,23 @@ namespace ET.Client
                     break;
                 case UnitType.Monster:
                     if (unitConfig.Id == 1082)
+                    {
                         unit.AddComponent<HuangFengDaShengAttackComponent>();
+                    }
                     else
-                        unit.AddComponent<MonsterAttackComponent>();
+                    {
+                        unit.AddComponent<MonsterAttackComponent>(); 
+                    }
+                   
                     unit.AddComponent<EnemyBehaviourComponent>();
+                  
+                    AISkeletonAnimationComponent skeleton = unit.AddComponent<AISkeletonAnimationComponent>();
+                    unit.Direction = Direction.Front;
+                    Debug.Log($"[怪物重新显现] 单位ID:{unit.Id} 重新显现时设置Walk动画状态"); 
+                    unit.SetAIUnitActionType(UnitActionType.Walk, true);
+                    
                     unit.AddComponent<MonsterMoveComponent, Vector3>(gameObjectComponent.Transform.position);
                     unit.AddComponent<MonsterCollisionComponent>();
-                    AISkeletonAnimationComponent skeleton = unit.GetComponent<AISkeletonAnimationComponent>();
-                    if (skeleton != null)
-                    {
-                        // 设置默认朝向和动画状态
-                        unit.Direction = Direction.Front;
-                        Debug.Log($"[怪物重新显现] 单位ID:{unit.Id} 重新显现时设置Walk动画状态"); 
-                        unit.SetAIUnitActionType(UnitActionType.Walk, true);
-                    }
                     break;
 
             }

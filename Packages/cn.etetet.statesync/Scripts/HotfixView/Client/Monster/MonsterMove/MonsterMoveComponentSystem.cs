@@ -17,24 +17,19 @@ namespace ET.Client
             self.RandomRadius = 3;
             self.IsFinishRandom = true;
             self.AttackFlag = false;
-            var unit = self.GetParent<Unit>();
-
+            Unit _unit = self.GetParent<Unit>();
+            self.Unit = _unit;
             // 确保动画组件存在
-            if (unit.GetComponent<AISkeletonAnimationComponent>() == null)
-            {
-                //Log.Warning("怪物移动组件初始化时，动画组件不存在");
-                unit.AddComponent<AISkeletonAnimationComponent>();
-            }
 
-            var gameObject = unit.GetComponent<GameObjectComponent>().GameObject;
+            var gameObject = _unit.GetComponent<GameObjectComponent>().GameObject;
             self.Seeker = gameObject.GetComponentInChildren<Seeker>();
             self.Colliders = new Collider[20];
             self.Seeker.pathCallback += self.OnCallFunc;
 
             // 设置默认朝向和动画状态
-            unit.Direction = Direction.Front;
+            _unit.Direction = Direction.Front;
             //Debug.Log($"[怪物移动] 单位ID:{unit.Id} 初始化时设置Walk动画状态");
-            unit.SetAIUnitActionType(UnitActionType.Walk, true);
+            _unit.SetAIUnitActionType(UnitActionType.Walk, true);
 
             // 初始化后开始随机移动
             self.RandomStartPath();
@@ -42,7 +37,7 @@ namespace ET.Client
         [EntitySystem]
         private static void Update(this ET.Client.MonsterMoveComponent self)
         {
-            var unit = self.GetParent<Unit>();
+            Unit unit = self.Unit;
             var monsterActionType = unit.GetMonsterActionType();
             var gameObject = unit.GetComponent<GameObjectComponent>().GameObject;
 
@@ -75,15 +70,19 @@ namespace ET.Client
         [EntitySystem]
         private static void Destroy(this ET.Client.MonsterMoveComponent self)
         {
-            var unit = self.GetParent<Unit>();
-            unit.RemoveComponent<AISkeletonAnimationComponent>();
+            Unit unit = self.Unit;
+            if (unit != null)
+            {
+                unit.RemoveComponent<AISkeletonAnimationComponent>();
+            }
             self.StopMove();
             self.Path = null;
             self.Seeker = null;
         }
         public static void CheckTargetDistance(this MonsterMoveComponent self)
         {
-            var unit = self.GetParent<Unit>();
+            Unit unit = self.Unit;
+
             var gameObject = unit.GetComponent<GameObjectComponent>().GameObject;
             if (!gameObject.activeSelf)
                 return;
@@ -108,7 +107,7 @@ namespace ET.Client
             // 如果当前有目标，检查与目标的距离
             if ((Unit)self.TargetUnit != null)
             {
-                Unit targetUnit = (Unit)self.TargetUnit;
+                Unit targetUnit = self.TargetUnit;
                 var targetTransform = targetUnit.GetComponent<GameObjectComponent>().GameObject.transform;
                 float distanceToTarget = Vector3.Distance(gameObject.transform.position, targetTransform.position);
 
@@ -158,10 +157,11 @@ namespace ET.Client
         }
         public static void CheckMove(this MonsterMoveComponent self)
         {
-            var unit = self.GetParent<Unit>();
-            var transform = unit.GetComponent<GameObjectComponent>().GameObject.transform;
+            Unit unit = self.Unit;
 
-            if ((Unit)self.TargetUnit == null)
+            var transform = unit.GetComponent<GameObjectComponent>().GameObject.transform;
+            Unit targetUnit = self.TargetUnit;
+            if (targetUnit == null)
             {
                 if (!self.IsFinishRandom)
                     return;
@@ -194,7 +194,6 @@ namespace ET.Client
             {
                 // Debug.Log("随机寻路 ： 随机移动11");
                 // 朝向目标单位移动
-                Unit targetUnit = (Unit)self.TargetUnit;
                 var targetTransform = targetUnit.GetComponent<GameObjectComponent>().GameObject.transform;
                 Vector3 targetPosition = targetTransform.position;
                 self.Seeker.StartPath(transform.position, targetPosition);
@@ -307,7 +306,6 @@ namespace ET.Client
             self.Path = null;
             self.CurrentPoint = 0;
             self.IsFinishRandom = true;  // 设置为true，这样可以开始新的随机移动
-            self.TargetUnit = null;
         }
     }
 }
