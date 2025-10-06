@@ -30,7 +30,7 @@ MonoBehaviour:
       ActiveRuleName: EnableGroup
       Collectors:
       - CollectPath: Packages/cn.etetet.loader/Bundles/AotDlls
-        CollectorGUID: 5edf4794c66cecc4f808f8db8d9206b7
+        CollectorGUID: 4e173d97aca5548d1a7ed2d2ba8c9bf1
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory

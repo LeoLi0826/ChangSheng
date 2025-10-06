@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: DefaultVolumeProfile
+  m_Script: {fileID: 11500000, guid: f22a23b9d98e440478697f4adf30e61c, type: 3}
+  m_Name: UIParticleProjectSettings 1
   m_EditorClassIdentifier: 
-  components: []
+  m_EnableLinearToGamma: 1
+  m_HideGeneratedObjects: 1
