@@ -9,8 +9,9 @@ namespace ET.Client
     {
         public SkeletonAnimation SkeletonAnimation;
         
-        public Dictionary<string, Animation> Animations = new Dictionary<string, Animation>();
+        public string CurrentAnimationName;
         
+        public Dictionary<string, Animation> Animations = new Dictionary<string, Animation>();
     }
 }
 

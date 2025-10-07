@@ -288,7 +288,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf7cd8c54d5134662b6cb99a81020106, type: 2}
+  - {fileID: 2100000, guid: 2b9ef1d2e09374983ac80ac63dd014ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -501,6 +501,7 @@ GameObject:
   - component: {fileID: 2937499051608646152}
   - component: {fileID: 2341020597220184509}
   - component: {fileID: 1105302483769258566}
+  - component: {fileID: 3066637976386532373}
   m_Layer: 0
   m_Name: LeoPlayer
   m_TagString: Player
@@ -630,3 +631,25 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &3066637976386532373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8427502379803500869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c93b27a942c4d90ba7672ee2282a4ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Setting: {fileID: 11400000, guid: 8506ad501860cd14fa5069b515f39d57, type: 2}

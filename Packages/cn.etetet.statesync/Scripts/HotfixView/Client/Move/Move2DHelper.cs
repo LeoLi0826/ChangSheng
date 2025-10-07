@@ -5,7 +5,7 @@ namespace ET.Client
 {
     public static class Move2DHelper
     {
-     /// <summary>
+        /// <summary>
         /// 寻路并移动到目标点
         /// </summary>
         /// <remarks>
@@ -13,8 +13,7 @@ namespace ET.Client
         /// </remarks>
         /// <param name="unit">要移动的Unit</param>
         /// <param name="target">目标位置</param>
-        /// <param name="turnTime">转向时间(未使用)</param>
-        public static async ETTask FindPathMoveToAsync(this Unit unit, Vector3 target, int turnTime = 100)
+        public static async ETTask FindPathMoveToAsync(this Unit unit, Vector3 target)
         {
             // 检查 Unit 是否有效
             if (unit == null || unit.IsDisposed)
@@ -26,6 +25,25 @@ namespace ET.Client
             
             float speed = numericComponent.GetAsFloat(NumericType.Speed);
             if (speed < 0.01)
+            {
+                return;
+            }
+            await unit.FindPathMoveToAsync(target, speed);
+        }
+        
+        
+        /// <summary>
+        /// 寻路并移动到目标点
+        /// </summary>
+        /// <remarks>
+        /// 可以多次连续调用，新的调用会自动取消并覆盖上一次的寻路和移动。
+        /// </remarks>
+        /// <param name="unit">要移动的Unit</param>
+        /// <param name="target">目标位置</param>
+        public static async ETTask FindPathMoveToAsync(this Unit unit, Vector3 target,float speed)
+        {
+            // 检查 Unit 是否有效
+            if (unit == null || unit.IsDisposed)
             {
                 return;
             }
@@ -58,7 +76,7 @@ namespace ET.Client
                 return;
             }
 
-            await moveComponent.MoveToAsync(list, speed, turnTime);
+            await moveComponent.MoveToAsync(list, speed);
         }
 
         /// <summary>

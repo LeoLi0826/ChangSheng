@@ -5,7 +5,7 @@
     {
         protected override async ETTask Run(Scene scene, SceneChangeFinish a)
         {
-            scene.AddComponent<OperaComponent>();
+            // scene.AddComponent<OperaComponent>();
             await ETTask.CompletedTask;
         }
     }

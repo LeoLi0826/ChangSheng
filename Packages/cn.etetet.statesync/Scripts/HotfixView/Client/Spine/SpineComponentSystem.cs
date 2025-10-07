@@ -11,6 +11,7 @@ namespace ET.Client
         {
             self.SkeletonAnimation = args2;
         }
+        
         [EntitySystem]
         private static void Destroy(this ET.Client.SpineComponent self)
         {

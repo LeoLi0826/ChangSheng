@@ -71,14 +71,6 @@ namespace ET.Client
         }
 
         public int N;
-
-        public int TurnTime;
-
-        public bool IsTurnHorizontal;
-
-        public quaternion From;
-
-        public quaternion To;
     } 
 }
 

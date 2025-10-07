@@ -6,7 +6,8 @@
         "ET.YooAssets",
         "ET.SourceGeneratorAttribute",
         "ET.HybridCLR",
-        "Unity.Cinemachine"
+        "Unity.Cinemachine",
+        "Sirenix.OdinInspector.Modules.UnityMathematics"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

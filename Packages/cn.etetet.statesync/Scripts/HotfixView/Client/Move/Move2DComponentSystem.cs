@@ -42,7 +42,6 @@ namespace ET.Client
             self.Targets.Clear();
             self.Speed = 0;
             self.N = 0;
-            self.TurnTime = 0;
         }
         
         public static bool IsArrived(this Move2DComponent self)
@@ -78,7 +77,7 @@ namespace ET.Client
         }
 
         // 该方法不需要用cancelToken的方式取消，因为即使不传入cancelToken，多次调用该方法也要取消之前的移动协程,上层可以stop取消
-        public static async ETTask<bool> MoveToAsync(this Move2DComponent self, List<Vector3> target, float speed, int turnTime = 100)
+        public static async ETTask<bool> MoveToAsync(this Move2DComponent self, List<Vector3> target, float speed)
         {
             self.Stop(false);
 
@@ -87,8 +86,6 @@ namespace ET.Client
                 self.Targets.Add(v);
             }
 
-            self.IsTurnHorizontal = true;
-            self.TurnTime = turnTime;
             self.Speed = speed;
             self.tcs = ETTask<bool>.Create(true);
 
@@ -124,10 +121,6 @@ namespace ET.Client
                 if (moveTime >= self.NeedTime)
                 {
                     unit.Position = self.NextTarget;
-                    if (self.TurnTime > 0)
-                    {
-                        unit.Rotation = self.To;
-                    }
                 }
                 else
                 {
@@ -137,18 +130,6 @@ namespace ET.Client
                     {
                         Vector3 newPos = math.lerp(self.StartPos, self.NextTarget, amount);
                         unit.Position = newPos;
-                    }
-                    
-                    // 计算方向插值
-                    if (self.TurnTime > 0)
-                    {
-                        amount = moveTime * 1f / self.TurnTime;
-                        if (amount > 1)
-                        {
-                            amount = 1f;
-                        }
-                        quaternion q = math.slerp(self.From, self.To, amount);
-                        unit.Rotation = q;
                     }
                 }
 
@@ -166,8 +147,6 @@ namespace ET.Client
                 if (self.N >= self.Targets.Count - 1)
                 {
                     unit.Position = self.NextTarget;
-                    unit.Rotation = self.To;
-
                     self.MoveFinish(ret);
                     return;
                 }
@@ -202,44 +181,6 @@ namespace ET.Client
             self.StartTime += self.NeedTime;
             
             self.NeedTime = (long) (distance / self.Speed * 1000);
-            
-            if (self.TurnTime > 0)
-            {
-                // 要用unit的位置
-                Vector3 faceV = self.GetFaceV();
-                if (math.lengthsq(faceV) < 0.0001f)
-                {
-                    return;
-                }
-                self.From = unit.Rotation;
-                
-                if (self.IsTurnHorizontal)
-                {
-                    faceV.y = 0;
-                }
-
-                if (Math.Abs(faceV.x) > 0.01 || Math.Abs(faceV.z) > 0.01)
-                {
-                    self.To = quaternion.LookRotation(faceV, math.up());
-                }
-
-                return;
-            }
-            
-            if (self.TurnTime == 0) // turn time == 0 立即转向
-            {
-                Vector3 faceV = self.GetFaceV();
-                if (self.IsTurnHorizontal)
-                {
-                    faceV.y = 0;
-                }
-
-                if (Math.Abs(faceV.x) > 0.01 || Math.Abs(faceV.z) > 0.01)
-                {
-                    self.To = quaternion.LookRotation(faceV, math.up());
-                    unit.Rotation = self.To;
-                }
-            }
         }
 
         private static Vector3 GetFaceV(this Move2DComponent self)
@@ -279,8 +220,6 @@ namespace ET.Client
             self.Targets.Clear();
             self.Speed = 0;
             self.N = 0;
-            self.TurnTime = 0;
-            self.IsTurnHorizontal = false;
             self.Root().GetComponent<TimerComponent>()?.Remove(ref self.MoveTimer);
 
             if (self.tcs != null)

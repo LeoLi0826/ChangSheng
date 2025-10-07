@@ -18,7 +18,8 @@
         "Unity.TextMeshPro",
         "Unity.Cinemachine",
         "AstarPathfindingProject",
-        "spine-unity"
+        "spine-unity",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

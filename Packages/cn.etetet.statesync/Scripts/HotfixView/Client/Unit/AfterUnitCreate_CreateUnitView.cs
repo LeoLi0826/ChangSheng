@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Spine.Unity;
+using UnityEngine;
 
 namespace ET.Client
 {
@@ -21,13 +22,20 @@ namespace ET.Client
             
             gameObjectComponent.Transform.rotation = Camera.main.transform.rotation;
             gameObjectComponent.Transform.position = unit.Position;
-
+            SkeletonAnimation skeletonAnimation = gameObjectComponent.GameObject.GetComponentInChildren<SkeletonAnimation>();
+            if (skeletonAnimation != null)
+            {
+                unit.AddComponent<SpineComponent, SkeletonAnimation>(skeletonAnimation);
+                unit.AddComponent<UnitAnimationComponent, UnitSpine, string>(gameObjectComponent.GameObject.GetComponent<UnitSpine>(),"idle");
+            }
             switch (unit.UnitType)
             {
                 case UnitType.Player:
                     unit.AddComponent<CinemachineComponent>();
                     unit.AddComponent<Pathfinding2DComponent, GameObject>(gameObjectComponent.GameObject);
                     unit.AddComponent<Move2DComponent>();
+                    unit.AddComponent<InputSystemComponent>();
+                    
                     EventSystem.Instance.Publish(scene, new AfterUnitCreateGetView() { Unit = unit });
                     unit.Position = new Vector3(45f, 0, 25f);
                     break;
