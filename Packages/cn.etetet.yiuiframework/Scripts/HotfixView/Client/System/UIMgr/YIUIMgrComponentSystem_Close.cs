@@ -65,11 +65,12 @@ namespace ET.Client
 
             self = selfRef;
 
-            await EventSystem.Instance?.PublishAsync(self.Root(), new YIUIEventPanelCloseBefore
-            {
-                UIPkgName = info.PkgName, UIResName = info.ResName, UIComponentName = info.Name,
-                PanelLayer = info.PanelLayer,
-            });
+            await EventSystem.Instance?.PublishAsync(self.Root(),
+                new YIUIEventPanelCloseBefore
+                {
+                    UIPkgName = info.PkgName, UIResName = info.ResName, UIComponentName = info.Name,
+                    PanelLayer = info.PanelLayer,
+                });
 
             if (info.UIPanel.PanelOption.HasFlag(EPanelOption.DisClose))
             {
@@ -112,7 +113,6 @@ namespace ET.Client
 
             if (!isCloseTriggerTween)
             {
-                self = selfRef;
                 ignoreTween = self.IsClose(info.UIPanel);
             }
 

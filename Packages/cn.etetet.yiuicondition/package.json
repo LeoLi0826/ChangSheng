@@ -1,0 +1,23 @@
+{
+  "name": "cn.etetet.yiuicondition",
+  "displayName": "ET.YIUI.Condition",
+  "version": "3.1.3",
+  "unity": "2022.3",
+  "category": "UI/YIUI",
+  "description": "Condition 条件系统 >>> 文档: https://lib9kmxvq7k.feishu.cn/wiki/Kc0awA9EXiRJylkreL9cfLJFnsg",
+  "author": {
+    "name": "YIYI",
+    "url": "https://github.com/LiShengYang-yiyi/YIUI/tree/YIUI-ET9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ET-Packages/cn.etetet.yiuicondition"
+  },
+  "dependencies": {
+    "cn.etetet.core": "1.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ET-Packages"
+  },
+  "_fingerprint": "d0f041a45ad367e49a65d0dea3f7e43ecc27c350"
+}
