@@ -149,7 +149,6 @@
         "cn.etetet.actorlocation": "3.0.0",
         "cn.etetet.core": "3.0.3",
         "cn.etetet.loader": "3.0.1",
-        "cn.etetet.demores": "3.0.0",
         "cn.etetet.mathematics": "0.0.2",
         "cn.etetet.router": "3.0.0",
         "cn.etetet.console": "3.0.0",
@@ -160,7 +159,6 @@
         "cn.etetet.move": "3.0.0",
         "cn.etetet.watcher": "3.0.0",
         "cn.etetet.aoi": "3.0.0",
-        "cn.etetet.ui": "3.0.0",
         "cn.etetet.referencecollector": "3.0.0",
         "cn.etetet.login": "3.0.0",
         "cn.etetet.netinner": "3.0.0",
@@ -191,6 +189,148 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
+    },
+    "cn.etetet.yiui": {
+      "version": "file:cn.etetet.yiui",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "cn.etetet.yiui3ddisplay": {
+      "version": "file:cn.etetet.yiui3ddisplay",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.yiuiframework": "3.0.0"
+      }
+    },
+    "cn.etetet.yiuiaudio": {
+      "version": "file:cn.etetet.yiuiaudio",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0"
+      }
+    },
+    "cn.etetet.yiuicodeanalysis": {
+      "version": "file:cn.etetet.yiuicodeanalysis",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "cn.etetet.yiuicondition": {
+      "version": "file:cn.etetet.yiuicondition",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0"
+      }
+    },
+    "cn.etetet.yiuiconditionconfig": {
+      "version": "file:cn.etetet.yiuiconditionconfig",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "cn.etetet.yiuidamagetips": {
+      "version": "file:cn.etetet.yiuidamagetips",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "cn.etetet.yiuieffect": {
+      "version": "file:cn.etetet.yiuieffect",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "cn.etetet.yiuiframework": {
+      "version": "file:cn.etetet.yiuiframework",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0",
+        "cn.etetet.yiuiinvoke": "4.0.3"
+      }
+    },
+    "cn.etetet.yiuigm": {
+      "version": "file:cn.etetet.yiuigm",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0"
+      }
+    },
+    "cn.etetet.yiuiinvoke": {
+      "version": "file:cn.etetet.yiuiinvoke",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0"
+      }
+    },
+    "cn.etetet.yiuiloopscrollrectasync": {
+      "version": "file:cn.etetet.yiuiloopscrollrectasync",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0"
+      }
+    },
+    "cn.etetet.yiuiluban": {
+      "version": "file:cn.etetet.yiuiluban",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0"
+      }
+    },
+    "cn.etetet.yiuilubangen": {
+      "version": "file:cn.etetet.yiuilubangen",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0",
+        "cn.etetet.loader": "1.0.0"
+      }
+    },
+    "cn.etetet.yiuinumeric": {
+      "version": "file:cn.etetet.yiuinumeric",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.yiuicodeanalysis": "0.0.1"
+      }
+    },
+    "cn.etetet.yiuinumericconfig": {
+      "version": "file:cn.etetet.yiuinumericconfig",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "cn.etetet.yiuireddot": {
+      "version": "file:cn.etetet.yiuireddot",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0"
+      }
+    },
+    "cn.etetet.yiuitips": {
+      "version": "file:cn.etetet.yiuitips",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0"
+      }
+    },
+    "cn.etetet.yiuiyooassets": {
+      "version": "file:cn.etetet.yiuiyooassets",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "1.0.0"
+      }
     },
     "cn.etetet.yooassets": {
       "version": "file:cn.etetet.yooassets",

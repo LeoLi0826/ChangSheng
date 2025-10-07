@@ -1,0 +1,33 @@
+{
+    "$id": 0,
+    "$type": "0|YIUILuban.Editor.LubanEditorSerializationData, ET.YIUI.LubanTools.Editor",
+    "RootShowAllConfig": true,
+    "m_MinWindowSize": {
+        "$type": "1|UnityEngine.Vector2, UnityEngine.CoreModule",
+        1000,
+        600
+    },
+    "m_MenuWidth": 400,
+    "InvalidFileNameRegex": "^[\\.\\\\\\\\/~#\\$%]",
+    "ValidFileSuffixRegex": "\\.(xlsx|xlsm|xml|json|txt)$",
+    "m_ShowLubanConfigClass": false,
+    "LubanEditorPackageSettings": {
+        "$id": 1,
+        "$type": "2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUILuban.Editor.LubanPackageEditorData, ET.YIUI.LubanTools.Editor]], mscorlib",
+        "comparer": {
+            "$id": 2,
+            "$type": "3|System.Collections.Generic.GenericEqualityComparer`1[[System.String, mscorlib]], mscorlib"
+        },
+        "$rlength": 0,
+        "$rcontent": [
+        ]
+    },
+    "LubanEditorConfigSettings": {
+        "$id": 3,
+        "$type": "4|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUILuban.Editor.LubanConfigEditorData, ET.YIUI.LubanTools.Editor]], mscorlib]], mscorlib",
+        "comparer": $iref:2,
+        "$rlength": 0,
+        "$rcontent": [
+        ]
+    }
+}
