@@ -22,7 +22,7 @@ namespace ET.Client
             
             unit.UnitType = UnitType.Player;
             NumericComponent numericComponent = unit.AddComponent<NumericComponent>();
-            numericComponent.SetNoEvent(NumericType.SpeedBase,10000);
+            numericComponent.SetNoEvent(NumericType.SpeedBase,100000);
 
             
             

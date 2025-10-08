@@ -17,6 +17,7 @@ namespace Pathfinding.Examples {
 	/// </summary>
 	[HelpURL("http://arongranberg.com/astar/docs/class_pathfinding_1_1_examples_1_1_mine_bot_animation.php")]
 	public class MineBotAnimation : VersionedMonoBehaviour {
+		public float lookaheadDistance = 1f;
 		/// <summary>
 		/// Animation component.
 		/// Should hold animations "awake" and "forward"
@@ -57,17 +58,17 @@ namespace Pathfinding.Examples {
 		}
 
 		protected void Update () {
-			if (ai.reachedEndOfPath) {
-				if (!isAtDestination) OnTargetReached();
-				isAtDestination = true;
-			} else isAtDestination = false;
+			// Check the current keyboard input
+			var dx = Input.GetAxis("Horizontal");
+			var dz = Input.GetAxis("Vertical");
 
-			// Calculate the velocity relative to this transform's orientation
-			Vector3 relVelocity = tr.InverseTransformDirection(ai.velocity);
-			relVelocity.y = 0;
+			// Set the destination of the AI to a point a few meters ahead of the character,
+			// in the desired direction.
+			Vector3 v = new Vector3(dx, 0, dz);
+			ai.destination = transform.position + v * lookaheadDistance;
 
 			// Speed relative to the character size
-			anim.SetFloat("NormalizedSpeed", relVelocity.magnitude / anim.transform.lossyScale.x);
+			anim.SetFloat("NormalizedSpeed",v.magnitude*this.ai.maxSpeed);
 		}
 	}
 }

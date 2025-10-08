@@ -86,7 +86,11 @@ namespace ET.Client
         /// <param name="error">错误码(0表示正常停止)</param>
         public static void Stop(this Unit unit, int error)
         {
-            unit.GetComponent<MoveComponent>().Stop(error == 0);
+            Move2DComponent moveComponent = unit.GetComponent<Move2DComponent>();
+            if (moveComponent != null && !moveComponent.IsDisposed)
+            {
+                moveComponent.Stop(error == 0);
+            }
         }
     }
 }

@@ -52,6 +52,13 @@ namespace ET.Client
                 self.PathfindingTask.SetResult(null);
             }
 
+            if (!AstarPath.active.data.gridGraph.Linecast(start, target))
+            {
+                //直线
+                result.Add(start);
+                result.Add(target);
+                return true;
+            }
             // 创建新的ETTask任务
             self.PathfindingTask = ETTask<Path>.Create(true);
 
@@ -87,7 +94,6 @@ namespace ET.Client
                 result.AddRange(pathResult.vectorPath);
                 return true;
             }
-
             return false;
         }
 

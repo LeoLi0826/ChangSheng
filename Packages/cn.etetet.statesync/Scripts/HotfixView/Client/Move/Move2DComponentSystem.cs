@@ -171,15 +171,22 @@ namespace ET.Client
 
             ++self.N;
 
+            // 边界检查：确保索引不越界
+            if (self.N >= self.Targets.Count)
+            {
+                Log.Error($"Move2DComponent SetNextTarget out of range: N={self.N}, Count={self.Targets.Count}");
+                return;
+            }
+
             // 时间计算用服务端的位置, 但是移动要用客户端的位置来插值
             Vector3 v = self.GetFaceV();
             float distance = math.length(v);
-            
+
             // 插值的起始点要以unit的真实位置来算
             self.StartPos = unit.Position;
 
             self.StartTime += self.NeedTime;
-            
+
             self.NeedTime = (long) (distance / self.Speed * 1000);
         }
 
@@ -188,7 +195,7 @@ namespace ET.Client
             return self.NextTarget - self.PreTarget;
         }
 
-        public static bool FlashTo(this MoveComponent self, Vector3 target)
+        public static bool FlashTo(this Move2DComponent self, Vector3 target)
         {
             Unit unit = self.GetParent<Unit>();
             unit.Position = target;
