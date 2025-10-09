@@ -22,12 +22,9 @@ namespace ET.Client
         {
             Debug.Log("快捷item初始化无限循环");
             //初始化无限循环列表 
-            self.m_LoopScrollQuick = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type, string>(self.u_ComLoopScrollQuick, typeof(QuickItemPrefabComponent), "u_EventSelect");
+            self.m_LoopScrollQuick = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type>(self.u_ComLoopScrollQuick, typeof(QuickItemPrefabComponent));
           
-            self.m_LoopScrollFunction = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type, string>(self.u_ComLoopScrollFunction, typeof(QuickItemPrefabComponent), "u_EventSelect");
-
-            // self.u_DataInfoState.SetValue(false);
-            self.u_ComItemDescRectTransform.gameObject.SetActive(false);
+            self.m_LoopScrollFunction = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type>(self.u_ComLoopScrollFunction, typeof(QuickItemPrefabComponent));
 
             PlayerDataInit(self);
         }
@@ -80,7 +77,7 @@ namespace ET.Client
             for (int i = 0; i < addNum; i++)
             {
                 //填充
-                self.quickList.Add(null);
+                self.quickList.Add(default);
             }
 
 
@@ -95,18 +92,10 @@ namespace ET.Client
         {
             item.IsEquipBox = false;
             item.ResetItem(data);
-
             item.SelectItem(select);
-            if (select)
-            {
-            }
         }
 
-        [EntitySystem]
-        private static void YIUILoopOnClick(this QuickWindowPanelComponent self, QuickItemPrefabComponent item, EntityRef<Item> data, int index, bool select)
-        {
-            item.BagInfoShowSelect(data);
-        }
+        
 
         #endregion
 
@@ -123,7 +112,7 @@ namespace ET.Client
             int addNun = itemContainerConfig.CellCountMax - self.functionList.Count;
             for (int i = 0; i < addNun; i++)
             {
-                self.functionList.Add(null);
+                self.functionList.Add(default);
             }
             await self.LoopScrollFunction.SetDataRefresh(self.functionList);
         }
@@ -456,41 +445,6 @@ namespace ET.Client
 
         #region 简介栏
       
-        //鼠标跟随简介信息栏
-        public static void UpdatePos(this QuickWindowPanelComponent self, RectTransform target, Vector3 offset = default)
-        {
-            self.Target = target;
-            if (self.Target == null || self.u_ComItemDescRectTransform == null)
-                return;
-
-            // 获取必要的RectTransform组件
-            var tipsRect = self.u_ComItemDescRectTransform;
-            var buttonRect = self.Target.transform as RectTransform;
-            var canvasRect = self.YIUIMgr().UICanvas.GetComponent<RectTransform>();
-            if (buttonRect == null || canvasRect == null)
-                return;
-
-            // 计算基础位置
-            Vector3 buttonWorldPos = buttonRect.TransformPoint(Vector3.zero);
-            Vector3 tipsLocalPos = tipsRect.parent.InverseTransformPoint(buttonWorldPos);
-            tipsLocalPos += offset;
-
-            // 水平位置限制
-            float maxHorizontalOffset = canvasRect.rect.width * 0.5f - tipsRect.rect.width * 0.5f;
-            tipsLocalPos.x = Mathf.Clamp(tipsLocalPos.x, -maxHorizontalOffset, maxHorizontalOffset);
-
-            // 计算垂直空间
-            float totalHeight = tipsRect.rect.height;
-            float spaceAbove = canvasRect.rect.height * 0.5f - (tipsLocalPos.y + buttonRect.rect.height * 0.5f);
-            float spaceBelow = canvasRect.rect.height * 0.5f + (tipsLocalPos.y - buttonRect.rect.height * 0.5f);
-
-            // 决定显示在按钮上方还是下方
-            bool showAbove = spaceBelow < totalHeight && spaceAbove > totalHeight;
-            float verticalOffset = (showAbove ? 1 : -1) * (totalHeight * 0.5f + buttonRect.rect.height * 0.5f);
-            // 设置最终位置
-            tipsRect.anchoredPosition3D = tipsLocalPos + new Vector3(0, verticalOffset, 0);
-        }
-      
         [EntitySystem]
         public static async ETTask DynamicEvent(this QuickWindowPanelComponent self, QuickTipsClose message)
         {
@@ -501,8 +455,6 @@ namespace ET.Client
         [EntitySystem]
         public static async ETTask DynamicEvent(this QuickWindowPanelComponent self, ModalTipsClose message)
         {
-            self.u_ComItemDescRectTransform.gameObject.SetActive(false);
-            // self.u_DataInfoState.SetValue(false);
             await ETTask.CompletedTask;
         }
 

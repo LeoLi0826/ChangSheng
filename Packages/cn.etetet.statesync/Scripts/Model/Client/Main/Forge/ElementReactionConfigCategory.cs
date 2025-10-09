@@ -53,7 +53,7 @@ namespace ET
     }
 
     
-    
+    [CodeProcess]
     public class ElementReactionConfigCategory: Singleton<ElementReactionConfigCategory>,ISingletonAwake
     {
         private Dictionary<ElementReactionType, ElementReactionConfig> configMap = new();

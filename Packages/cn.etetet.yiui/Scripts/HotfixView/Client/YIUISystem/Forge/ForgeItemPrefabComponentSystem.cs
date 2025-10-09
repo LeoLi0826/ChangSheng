@@ -50,17 +50,21 @@ namespace ET.Client
         {
             self.u_ComItemStateUIDragItem.CanDrag = info != null;
             //这里的格子的顺序可能有问题
-            self.ItemDataInfo = info;
             self.u_DataSlotState.SetValue(info != null?1:0);
             
             if (info != null)
             {
+                self.ItemDataInfo = info;
                 ItemConfig itemConfig = info.config;
 
                 self.u_DataIcon.SetValue(itemConfig.Icon);
 
                 self.u_DataCount.SetValue(info.Count);
                 self.u_DataItemType.SetValue(itemConfig.Type);
+            }
+            else
+            {
+                self.ItemDataInfo = default;
             }
         }
     }

@@ -42,9 +42,9 @@ namespace ET.Client
                 Position = self.UIBase.OwnerRectTransform.position,
             });
         }
-
-        //点击打开物品详情（保留原有功能）
-        public static void OnEventSelectAction(this QuickItemPrefabComponent self)
+        
+        [YIUIInvoke(QuickItemPrefabComponent.OnEventSelectInvoke)]
+        private static void OnEventSelectInvoke(this QuickItemPrefabComponent self)
         {
             Item item = self.ItemDataInfo;
             if (item == null) return;
@@ -54,7 +54,6 @@ namespace ET.Client
                 Position = self.UIBase.OwnerRectTransform.position,
             });
         }
-
         #endregion YIUIEvent结束
 
 
@@ -63,12 +62,12 @@ namespace ET.Client
         {
             self.u_ComItemStateUIDragItem.CanDrag = info != null;
             //这里的格子的顺序可能有问题
-            self.ItemDataInfo = info;
             self.u_DataSlotState.SetValue(info != null ? 1 : 0);
             if (info != null)
             {
+                self.ItemDataInfo = info;
+                
                 ItemConfig itemConfig = info.config;
-
                 //Log.Debug("快捷物品名字为：" + info.Name + "物品个数为：" + info.Count + "物品状态为：" + info.SlotState + " 物品图标为：" + info.ItemIcon + " 物品ID为：" + info.ItemId);
                 //这个是是否显示数字下标
 
@@ -79,6 +78,7 @@ namespace ET.Client
             }
             else
             {
+                self.ItemDataInfo = default;
                 self.u_DataIcon.SetValue("");
                 self.u_DataCount.SetValue(0);
             }
@@ -88,10 +88,10 @@ namespace ET.Client
         {
             self.u_ComItemStateUIDragItem.CanDrag = info != null;
             //这里的格子的顺序可能有问题
-            self.ItemDataInfo = info;
             self.u_DataSlotState.SetValue(info != null ? 1 : 0);
             if (info != null)
             {
+                self.ItemDataInfo = info;
                 ItemConfig itemConfig = info.config;
 
                 //Log.Debug("快捷物品名字为：" + info.Name + "物品个数为：" + info.Count + "物品状态为：" + info.SlotState + " 物品图标为：" + info.ItemIcon + " 物品ID为：" + info.ItemId);
@@ -105,6 +105,7 @@ namespace ET.Client
             }
             else
             {
+                self.ItemDataInfo = default;
                 self.u_DataIcon.SetValue("");
                 self.u_DataSlotState.SetValue(0);
             }

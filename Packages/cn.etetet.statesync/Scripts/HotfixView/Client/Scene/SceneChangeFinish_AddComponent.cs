@@ -6,6 +6,8 @@
         protected override async ETTask Run(Scene scene, SceneChangeFinish a)
         {
             // scene.AddComponent<OperaComponent>();
+            await scene.YIUIRoot().OpenPanelAsync<PlayerUIPanelComponent>();
+            await scene.YIUIRoot().OpenPanelAsync<QuickWindowPanelComponent>();
             await ETTask.CompletedTask;
         }
     }

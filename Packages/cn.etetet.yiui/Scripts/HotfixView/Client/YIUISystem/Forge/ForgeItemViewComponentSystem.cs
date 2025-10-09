@@ -26,7 +26,7 @@ namespace ET.Client
 
             self.m_ComForgeScrollRect = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type>(self.u_ComForgeScrollRect, typeof(ForgeItemPrefabComponent));
 
-            self.m_ComForgeReadyScrollRect = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type, string>(self.u_ComForgeReadyScrollRect, typeof(ForgeItemPrefabComponent), "u_EventSelect");
+            self.m_ComForgeReadyScrollRect = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type>(self.u_ComForgeReadyScrollRect, typeof(QuickItemPrefabComponent));
         }
 
         [EntitySystem]
@@ -84,21 +84,20 @@ namespace ET.Client
 
         #region YIUIEvent开始
 
-
-        //合成按钮点击事件 合成开始
-        private static async ETTask OnEventForgeStartAction(this ForgeItemViewComponent self)
+        [YIUIInvoke(ForgeItemViewComponent.OnEventForgeFinishInvoke)]
+        private static async ETTask OnEventForgeFinishInvoke(this ForgeItemViewComponent self)
+        {
+            ForgeHelper.ForgeItem(self.Root());
+            await ETTask.CompletedTask;
+        }
+        
+        [YIUIInvoke(ForgeItemViewComponent.OnEventForgeStartInvoke)]
+        private static async ETTask OnEventForgeStartInvoke(this ForgeItemViewComponent self)
         {
             self.u_ComForgeLv_SkeSkeletonGraphic.AnimationState.SetAnimation(0, "fire", true);
             await self.Root().GetComponent<TimerComponent>().WaitAsync(1000);
             await ForgeHelper.Forge(self.Root());
             self.u_ComForgeLv_SkeSkeletonGraphic.AnimationState.SetAnimation(0, "idle", true);
-            await ETTask.CompletedTask;
-        }
-
-
-        private static async ETTask OnEventForgeFinishAction(this ForgeItemViewComponent self)
-        {
-            ForgeHelper.ForgeItem(self.Root());
             await ETTask.CompletedTask;
         }
         #endregion YIUIEvent结束
@@ -116,7 +115,7 @@ namespace ET.Client
             int addNum = itemContainerConfig.CellCountMax - self.m_ForgeDataList.Count;
             for (int i = 0; i < addNum; i++)
             {
-                self.m_ForgeDataList.Add(null);
+                self.m_ForgeDataList.Add(default);
             }
 
             //无限循环列表初始化 调用 这里开始调用刷新
@@ -141,7 +140,7 @@ namespace ET.Client
             int addNum = itemContainerConfig.CellCountMax - self.m_ForgeReadyDataList.Count;
             for (int i = 0; i < addNum; i++)
             {
-                self.m_ForgeReadyDataList.Add(null);
+                self.m_ForgeReadyDataList.Add(default);
             }
             self.RefreshItem(4);
             await ETTask.CompletedTask;
@@ -326,11 +325,18 @@ namespace ET.Client
                 Debug.Log("锻造完成物品：点击了第" + index + " 个格子");
             }
         }
-
+        
+        
         [EntitySystem]
-        private static void YIUILoopOnClick(this ForgeItemViewComponent self, QuickItemPrefabComponent item, EntityRef<Item> data, int index, bool select)
+        private static void YIUILoopRenderer(this ForgeItemViewComponent self, ForgeItemPrefabComponent item, EntityRef<Item> data, int index, bool select)
         {
-            item.SelectItem(select, 2, data);
+            //ui界面的数据渲染
+            item.ResetItem(data);
+
+            if (select)
+            {
+                Debug.Log("锻造完成物品：点击了第" + index + " 个格子");
+            }
         }
     }
 }

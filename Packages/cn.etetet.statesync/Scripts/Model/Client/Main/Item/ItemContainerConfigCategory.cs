@@ -10,6 +10,8 @@ namespace ET
         public int CellCount;
         public bool CanCell;
     }
+    
+    [CodeProcess]
     public class ItemContainerConfigCategory : Singleton<ItemContainerConfigCategory>,ISingletonAwake
     {
         private Dictionary<ItemContainerType, ItemContainerConfig> dic = new Dictionary<ItemContainerType, ItemContainerConfig>();

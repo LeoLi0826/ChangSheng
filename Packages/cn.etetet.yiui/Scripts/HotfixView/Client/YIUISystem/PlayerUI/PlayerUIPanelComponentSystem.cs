@@ -20,12 +20,8 @@ namespace ET.Client
         [EntitySystem]
         private static void YIUIInitialize(this PlayerUIPanelComponent self)
         {
-            //摇杆事件初始化
-            self.eventTriggerInit();
-
             //一些初始化
             self.OpenInit();
-
         }
 
         public static void OpenInit(this PlayerUIPanelComponent self)
@@ -129,30 +125,7 @@ namespace ET.Client
             self.ResourceId = 0;
             await ETTask.CompletedTask;
         }
-
         
-        
-        //打开背包
-        private static async ETTask OnEventBagAction(this PlayerUIPanelComponent self)
-        {
-            // AudioSourceHelper.PlaySfx(self.Root(), AudioClipType.ButtonClick);
-            await self.YIUIRoot().OpenPanelAsync<BagPanelComponent, EBagPanelViewEnum>(EBagPanelViewEnum.BagItemView);
-
-            //刷新背包
-            // await self.Fiber().UIEvent(new EventReFresh());
-
-            await ETTask.CompletedTask;
-        }
-
-        //打开商店
-        private static async ETTask OnEventShopAction(this PlayerUIPanelComponent self)
-        {
-            // AudioSourceHelper.PlaySfx(self.Root(), AudioClipType.ButtonClick);
-            // await self.YIUIRoot().OpenPanelAsync<ShopPanelComponent, EShopPanelViewEnum>(EShopPanelViewEnum.ShopGlodView);
-
-            await ETTask.CompletedTask;
-        }
-
         //点击钓鱼
         private static async ETTask OnEventFinshingAction(this PlayerUIPanelComponent self)
         {
@@ -186,56 +159,81 @@ namespace ET.Client
             await ETTask.CompletedTask;
         }
 
-        //遥感事件
-        private static async ETTask OnEventDragAction(this PlayerUIPanelComponent self)
+
+        [YIUIInvoke(PlayerUIPanelComponent.OnEventForgeActionInvoke)]
+        private static async ETTask OnEventForgeActionInvoke(this PlayerUIPanelComponent self)
         {
+            
+            await self.YIUIRoot().OpenPanelAsync<ForgePanelComponent, EForgePanelViewEnum>(EForgePanelViewEnum.ForgeItemView);
+            //关闭快捷栏的信息框
+            await self.DynamicEvent(new EventQuickItemForgeState() { State = 1 });
+        }
+        
+        [YIUIInvoke(PlayerUIPanelComponent.OnEventTestOpenModalTipPanelInvoke)]
+        private static async ETTask OnEventTestOpenModalTipPanelInvoke(this PlayerUIPanelComponent self)
+        {
+            //await YIUIMgrComponent.Inst.Root.OpenPanelAsync<ModalTipsPanelComponent, RectTransform, Item>(self.u_ComButton_AddButton.transform as RectTransform, null);//test
             await ETTask.CompletedTask;
         }
-
-        //回到主页面
-        private static async ETTask OnEventHomeAction(this PlayerUIPanelComponent self)
-        {
-            // AudioSourceHelper.PlaySfx(self.Root(), AudioClipType.ButtonClick);
-            // await self.YIUIRoot().OpenPanelAsync<HomePanelComponent>();
-
-            await ETTask.CompletedTask;
-        }
-
-        //测试升级
-        private static async ETTask OnEventDataTestAction(this PlayerUIPanelComponent self)
-        {
-          
-            await ETTask.CompletedTask;
-        }
-
-        private static async ETTask OnEventHandBookAction(this PlayerUIPanelComponent self)
+        
+        [YIUIInvoke(PlayerUIPanelComponent.OnEventHandBookInvoke)]
+        private static async ETTask OnEventHandBookInvoke(this PlayerUIPanelComponent self)
         {
             // AudioSourceHelper.PlaySfx(self.Root(), AudioClipType.ButtonClick);
             // await self.YIUIRoot().OpenPanelAsync<HandBookPanelComponent, EHandBookPanelViewEnum>(EHandBookPanelViewEnum.FishView);
 
             await ETTask.CompletedTask;
         }
-
-        //交互按钮
-        private static async ETTask OnEventButtonInteractionAction(this PlayerUIPanelComponent self)
+        
+        [YIUIInvoke(PlayerUIPanelComponent.OnEventDataTestInvoke)]
+        private static async ETTask OnEventDataTestInvoke(this PlayerUIPanelComponent self)
         {
+            
             await ETTask.CompletedTask;
         }
-
-
-
-        private static async ETTask OnEventTestOpenModalTipPanelAction(this PlayerUIPanelComponent self)
+        
+        [YIUIInvoke(PlayerUIPanelComponent.OnEventHomeInvoke)]
+        private static async ETTask OnEventHomeInvoke(this PlayerUIPanelComponent self)
         {
-            //await YIUIMgrComponent.Inst.Root.OpenPanelAsync<ModalTipsPanelComponent, RectTransform, Item>(self.u_ComButton_AddButton.transform as RectTransform, null);//test
+            
+            // AudioSourceHelper.PlaySfx(self.Root(), AudioClipType.ButtonClick);
+            // await self.YIUIRoot().OpenPanelAsync<HomePanelComponent>();
+
             await ETTask.CompletedTask;
         }
-
-        private static async ETTask OnEventForgeActionAction(this PlayerUIPanelComponent self)
+        
+        [YIUIInvoke(PlayerUIPanelComponent.OnEventButtonInteractionInvoke)]
+        private static async ETTask OnEventButtonInteractionInvoke(this PlayerUIPanelComponent self)
         {
-            await self.YIUIRoot().OpenPanelAsync<ForgePanelComponent, EForgePanelViewEnum>(EForgePanelViewEnum.ForgeItemView);
-            //关闭快捷栏的信息框
-            await self.DynamicEvent(new EventQuickItemForgeState() { State = 1 });
+            
+            await ETTask.CompletedTask;
+        }
+        
+        [YIUIInvoke(PlayerUIPanelComponent.OnEventShopInvoke)]
+        private static async ETTask OnEventShopInvoke(this PlayerUIPanelComponent self)
+        {
+            // AudioSourceHelper.PlaySfx(self.Root(), AudioClipType.ButtonClick);
+            // await self.YIUIRoot().OpenPanelAsync<ShopPanelComponent, EShopPanelViewEnum>(EShopPanelViewEnum.ShopGlodView);
 
+            await ETTask.CompletedTask;
+        }
+        
+        [YIUIInvoke(PlayerUIPanelComponent.OnEventBagInvoke)]
+        private static async ETTask OnEventBagInvoke(this PlayerUIPanelComponent self)
+        {
+            // AudioSourceHelper.PlaySfx(self.Root(), AudioClipType.ButtonClick);
+            await self.YIUIRoot().OpenPanelAsync<BagPanelComponent, EBagPanelViewEnum>(EBagPanelViewEnum.BagItemView);
+
+            //刷新背包
+            // await self.Fiber().UIEvent(new EventReFresh());
+
+            await ETTask.CompletedTask;
+        }
+        
+        [YIUIInvoke(PlayerUIPanelComponent.OnEventDragInvoke)]
+        private static async ETTask OnEventDragInvoke(this PlayerUIPanelComponent self)
+        {
+            
             await ETTask.CompletedTask;
         }
         #endregion YIUIEvent结束
@@ -250,164 +248,6 @@ namespace ET.Client
         public static void HideWindow(this PlayerUIPanelComponent self)
         {
             // self.Root().GetComponent<TimerComponent>().Remove(ref self.joyMoveTimerId);
-        }
-
-
-        //移动 摇杆事件初始化
-        #region MyRegion
-        private static void eventTriggerInit(this PlayerUIPanelComponent self)
-        {
-            // 注册 PointerDown 事件
-            self.RegisterEvent<PointerEventData>(EventTriggerType.PointerDown, self.OnPointerDown);
-
-            // 注册 PointerUp 事件
-            self.RegisterEvent<PointerEventData>(EventTriggerType.PointerUp, self.OnPointerUp);
-
-            // 注册 Drag 事件
-            self.RegisterEvent<PointerEventData>(EventTriggerType.Drag, self.OnDrag);
-        }
-
-        private static void RegisterEvent<T>(this PlayerUIPanelComponent self, EventTriggerType eventType, Action<T> action) where T : BaseEventData
-        {
-            // Debug.Log("注册事件！！！");
-            EventTrigger.Entry entry = new EventTrigger.Entry
-            {
-                eventID = eventType
-            };
-            entry.callback.AddListener((data) => action((T)data));
-            self.u_ComJoystickEventTrigger.triggers.Add(entry);
-        }
-
-
-
-
-        public static void OnPointerDown(this PlayerUIPanelComponent self, PointerEventData eventData)
-        {
-            //Debug.Log("我按下了按钮！！！");
-            //打开
-            self.isUpdate = true;
-
-            Vector2 localPos;
-
-            //获取按下的位置
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(self.u_ComJoystickEventTrigger.transform as RectTransform,
-                eventData.position,
-                eventData.pressEventCamera,
-                out localPos);
-
-            //获取移动方向
-            self.moveDir = (localPos - self.originPos).normalized;
-
-            //修改按键图标位置
-            self.u_ComHandleImgTransform.transform.position = localPos;
-
-            // Vector3 dir = new Vector3(self.moveDir.x, 0, self.moveDir.y).normalized;
-            // Vector3 Camepos = (Camera.main.transform.rotation * dir);
-            // Vector3 finialmoveDir = new Vector3(Camepos.x, 0, Camepos.z).normalized;
-            // self.Root().CurrentScene().GetComponent<OperaComponent>().JoyMove(finialmoveDir);
-            self.coolTime = 0;
-
-        }
-
-        //拖拽
-        public static void OnDrag(this PlayerUIPanelComponent self, PointerEventData eventData)
-        {
-            Debug.Log("我拖动了按钮！！！");
-            Vector2 localPos;
-            //拖拽的实现
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(self.u_ComJoystickEventTrigger.transform as RectTransform,
-                eventData.position,
-                eventData.pressEventCamera,
-                out localPos);
-
-            if ((localPos - self.originPos).magnitude >= 138.5f)
-                localPos = self.originPos + ((localPos - self.originPos).normalized * 138.5f);
-            self.moveDir = (localPos - self.originPos).normalized;
-
-            Debug.Log("我拖动了按钮：self.moveDir: " + self.moveDir + " localPos: " + localPos);
-            //修改位置
-            self.u_ComHandleImgTransform.transform.localPosition = localPos;
-
-        }
-
-        //按键抬起
-        public static void OnPointerUp(this PlayerUIPanelComponent self, PointerEventData eventData)
-        {
-            Debug.Log("我抬起了按钮！！！");
-            self.u_ComHandleImgTransform.transform.localPosition = self.originPos;
-            self.isUpdate = false;
-            self.moveDir = Vector2.zero;
-            self.coolTime = 0.0f;
-            Unit unit = self.unit;
-            unit.GetComponent<PlayerBehaviourComponent>().StopMove();
-
-            //里面涉及服务器相关
-            self.Root().CurrentScene().GetComponent<OperaComponent>().StopMove();
-
-        }
-
-
-
-        public static void JoyMoveUpdate(this PlayerUIPanelComponent self)
-        {
-            if (!self.isUpdate)
-                return;
-            if (self.moveDir == Vector2.zero)
-            {
-                self.LastDir = Vector2.zero;
-                return;
-            }
-
-            Debug.Log("移动！！！x: " + self.moveDir.x + " y: " + self.moveDir.y);
-            Debug.Log("上次移动！！！x: " + self.LastDir.x + " y: " + self.LastDir.y);
-
-
-            self.coolTime += Time.deltaTime;
-            //Vector3 Camepos = (Camera.main.transform.rotation * new Vector3(self.moveDir.x, 0.0f, self.moveDir.y));
-            Vector3 Camepos = new Vector3(self.moveDir.x, self.moveDir.y, 0.0f);
-
-            Vector3 finialmoveDir = new Vector3(Camepos.x, Camepos.y, 0.0f).normalized;
-            Debug.Log("显示coolTime: " + self.coolTime + "finalmoveDir: " + finialmoveDir);
-            if (self.moveDir != self.LastDir)
-            {
-                Debug.Log("我进入了移动1");
-                if (self.coolTime >= 0.2f)
-                {
-                    Debug.Log("我进入了移动2");
-                    self.Root().CurrentScene().GetComponent<OperaComponent>().OnMove(finialmoveDir);
-                    self.coolTime = 0;
-                }
-            }
-            else
-            {
-                Debug.Log("我进入了移动3");
-                if (self.coolTime >= 0.3f)
-                {
-                    Debug.Log("我进入了移动4");
-                    self.Root().CurrentScene().GetComponent<OperaComponent>().OnMove(finialmoveDir);
-                    self.coolTime = 0;
-                }
-            }
-
-            self.LastDir = self.moveDir;
-
-        }
-
-        #endregion
-
-
-        [EntitySystem]
-        private static void Update(this PlayerUIPanelComponent self)
-        {
-            try
-            {
-                // Debug.Log("我被调用了！");
-                self.JoyMoveUpdate();
-            }
-            catch (Exception e)
-            {
-                Log.Error($"move timer error: {self.Id}\n{e}");
-            }
         }
 
         //人物界面 数据刷新

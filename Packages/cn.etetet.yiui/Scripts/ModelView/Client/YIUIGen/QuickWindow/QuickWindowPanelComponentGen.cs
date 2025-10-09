@@ -24,7 +24,6 @@ namespace ET.Client
         public YIUIPanelComponent UIPanel => u_UIPanel;
         public UnityEngine.UI.LoopHorizontalScrollRect u_ComLoopScrollQuick;
         public UnityEngine.UI.LoopVerticalScrollRect u_ComLoopScrollFunction;
-        public UnityEngine.RectTransform u_ComItemDescRectTransform;
         public YIUIFramework.UIDataValueString u_DataName;
         public YIUIFramework.UIDataValueString u_DataMessage;
         public YIUIFramework.UIDataValueString u_DataImage;

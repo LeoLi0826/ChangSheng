@@ -4,7 +4,7 @@ using YIUIFramework;
 
 namespace ET.Client
 {
-    [GM(EGMType.Speed, 1, "移动-属性修改")]
+    [GM(EGMType.Speed, 2, "移动-属性修改")]
     public class GM_ChangeSpeed : IGMCommand
     {
         public List<GMParamInfo> GetParams()

@@ -7,6 +7,9 @@ namespace ET
 {
 	public partial class AIConfigCategory
 	{
+
+		// public BaseCompositeNode Root;
+		
 		[BsonIgnore]
 		public Dictionary<int, List<AIConfig>> AIConfigs = new ();
 

@@ -10,17 +10,12 @@ namespace ET.Client
     /// Date    2025.9.8
     /// Desc
     /// </summary>
-    public partial class ItemTipsViewComponent: Entity, IYIUIOpen<ParamVo>, IYIUIOpenTween, IYIUICloseTween,IDynamicEvent<ItemTipsClose>
+    public partial class ItemTipsViewComponent: Entity, IYIUIOpen<ParamVo>, IYIUIOpenTween, IYIUICloseTween
     {
         public ItemTipsExtraData ExtraData;
 
     }
-    
-    public struct ItemTipsClose
-    {
-    
-    }
-    
+
     //额外参数
     [EnableClass]
     public class ItemTipsExtraData

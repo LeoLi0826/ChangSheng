@@ -51,67 +51,66 @@ namespace ET.Client
 
         #region YIUIEvent开始
 
-        //返回主页面按钮
-        private static async ETTask OnEventHomeActionAction(this ForgePanelComponent self)
+        [YIUIInvoke(ForgePanelComponent.OnEventForgeInvoke)]
+        private static async ETTask OnEventForgeInvoke(this ForgePanelComponent self)
         {
+            
             await ETTask.CompletedTask;
         }
-
-        //返回按钮
-        private static async ETTask OnEventBackActionAction(this ForgePanelComponent self)
+        
+        [YIUIInvoke(ForgePanelComponent.OnEventTestGetInvoke)]
+        private static async ETTask OnEventTestGetInvoke(this ForgePanelComponent self)
         {
-            //开启快捷栏的信息框
-            await self.DynamicEvent(new EventQuickItemForgeState() {State = 0});
-            self.UIPanel.Close();
+            
             await ETTask.CompletedTask;
         }
-
-
-        //打开物品界面
-        private static async ETTask OnEventOpenItemActionAction(this ForgePanelComponent self)
+        
+        [YIUIInvoke(ForgePanelComponent.OnEventTestFreshInvoke)]
+        private static async ETTask OnEventTestFreshInvoke(this ForgePanelComponent self)
+        {
+            //await self.Fiber().UIEvent(new EventBagItemReFresh());
+            await ETTask.CompletedTask;
+        }
+        
+        [YIUIInvoke(ForgePanelComponent.OnEventOpenOtherActionInvoke)]
+        private static async ETTask OnEventOpenOtherActionInvoke(this ForgePanelComponent self)
+        {
+            Debug.Log("我打开了其他界面");
+            await self.UIPanel.OpenViewAsync(EForgePanelViewEnum.ForgeOtherView.ToString());//viewEnum.ToString());
+            await ETTask.CompletedTask;
+        }
+        
+        [YIUIInvoke(ForgePanelComponent.OnEventOpenItemActionInvoke)]
+        private static async ETTask OnEventOpenItemActionInvoke(this ForgePanelComponent self)
         {
             Debug.Log("我打开了物品界面");
             await self.UIPanel.OpenViewAsync(EForgePanelViewEnum.ForgeItemView.ToString());//viewEnum.ToString());
 
             await ETTask.CompletedTask;
-
-
         }
-
-        //打开道具界面
-        private static async ETTask OnEventOpenToolActionAction(this ForgePanelComponent self)
+        
+        [YIUIInvoke(ForgePanelComponent.OnEventOpenToolActionInvoke)]
+        private static async ETTask OnEventOpenToolActionInvoke(this ForgePanelComponent self)
         {
             Debug.Log("我打开了道具界面");
             await self.UIPanel.OpenViewAsync(EForgePanelViewEnum.ForgeToolView.ToString());//viewEnum.ToString());
 
             await ETTask.CompletedTask;
         }
-        //打开其他界面
-        private static async ETTask OnEventOpenOtherActionAction(this ForgePanelComponent self)
+        
+        [YIUIInvoke(ForgePanelComponent.OnEventHomeActionInvoke)]
+        private static async ETTask OnEventHomeActionInvoke(this ForgePanelComponent self)
         {
-            Debug.Log("我打开了其他界面");
-            await self.UIPanel.OpenViewAsync(EForgePanelViewEnum.ForgeOtherView.ToString());//viewEnum.ToString());
+            
             await ETTask.CompletedTask;
         }
-
-
-        //测试刷新背包
-        private static async ETTask OnEventTestFreshAction(this ForgePanelComponent self)
+        
+        [YIUIInvoke(ForgePanelComponent.OnEventBackActionInvoke)]
+        private static async ETTask OnEventBackActionInvoke(this ForgePanelComponent self)
         {
-            //await self.Fiber().UIEvent(new EventBagItemReFresh());
-            await ETTask.CompletedTask;
-        }
-        //测试拉杆收获
-        private static async ETTask OnEventTestGetAction(this ForgePanelComponent self)
-        {
-
-            await ETTask.CompletedTask;
-        }
-
-        //锻造按钮 开始锻造
-        private static async ETTask OnEventForgeAction(this ForgePanelComponent self)
-        {
-          
+            //开启快捷栏的信息框
+            await self.DynamicEvent(new EventQuickItemForgeState() {State = 0});
+            self.UIPanel.Close();
             await ETTask.CompletedTask;
         }
         #endregion YIUIEvent结束

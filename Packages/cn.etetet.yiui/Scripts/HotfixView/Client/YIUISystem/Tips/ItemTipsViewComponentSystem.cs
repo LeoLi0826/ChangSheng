@@ -76,16 +76,10 @@ namespace ET.Client
             return true;
         }
 
-        //消息 回收对象
-        [EntitySystem]
-        private static async ETTask DynamicEvent(this ItemTipsViewComponent self, ItemTipsClose message)
-        {
-            await self.OnEventCloseAction();
-        }
-
         #region YIUIEvent开始
 
-        private static async ETTask OnEventCloseAction(this ItemTipsViewComponent self)
+        [YIUIInvoke(ItemTipsViewComponent.OnEventCloseInvoke)]
+        private static async ETTask OnEventCloseInvoke(this ItemTipsViewComponent self)
         {
             self.UIView.Close();
             await ETTask.CompletedTask;

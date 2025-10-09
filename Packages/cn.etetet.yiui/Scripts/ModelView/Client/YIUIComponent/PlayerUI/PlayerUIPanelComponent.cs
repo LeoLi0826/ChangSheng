@@ -26,7 +26,7 @@ namespace ET.Client
     /// Date    2025.10.3
     /// Desc
     /// </summary>
-    public partial class PlayerUIPanelComponent : Entity,IUpdate,IDynamicEvent<FishingFlag>, 
+    public partial class PlayerUIPanelComponent : IDynamicEvent<FishingFlag>, 
             IDynamicEvent<PlayerUIDateRefresh> ,IDynamicEvent<GetResource> ,IDynamicEvent<OutResource>,
             IDynamicEvent<EventThrowingCheckEnergy>
     {

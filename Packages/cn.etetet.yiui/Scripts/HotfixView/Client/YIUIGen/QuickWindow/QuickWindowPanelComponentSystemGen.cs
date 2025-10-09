@@ -39,7 +39,6 @@ namespace ET.Client
 
             self.u_ComLoopScrollQuick = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.LoopHorizontalScrollRect>("u_ComLoopScrollQuick");
             self.u_ComLoopScrollFunction = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.LoopVerticalScrollRect>("u_ComLoopScrollFunction");
-            self.u_ComItemDescRectTransform = self.UIBase.ComponentTable.FindComponent<UnityEngine.RectTransform>("u_ComItemDescRectTransform");
             self.u_DataName = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueString>("u_DataName");
             self.u_DataMessage = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueString>("u_DataMessage");
             self.u_DataImage = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueString>("u_DataImage");
