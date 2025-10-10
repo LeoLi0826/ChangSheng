@@ -256,3 +256,24 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
+      - CollectPath: Packages/cn.etetet.yiuidamagetips/Assets/GameRes/YIUI
+        CollectorGUID: 08b00242f1bdb0546a1c184d3ca672d1
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: DamageTips
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Packages/cn.etetet.yiuidamagetips/Assets/GameRes/Damage
+        CollectorGUID: 6ae38966ad18c084fbbc3f4764f10cba
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
