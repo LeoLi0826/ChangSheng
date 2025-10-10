@@ -393,23 +393,25 @@ namespace ET.Client
             //     self.Root().GetComponent<AdventureComponent>().StartAdventure(2).NoContext();
             // }
             //
-            // //测试生成法宝到物品栏
-            // if (Input.GetKeyDown(KeyCode.J))
-            // {
-            //     // 从1001-1050中随机选择一个数值
-            //     int randomConfigId = UnityEngine.Random.Range(1002, 1017);
-            //     //获取法宝那边 也得改
-            //
-            //     //固定获取 宝莲灯
-            //     Test1(self, 1008).NoContext();
-            // }
-            // //测试生成材料到物品栏
-            // if (Input.GetKeyDown(KeyCode.H))
-            // {
-            //     // 从1001-1050中随机选择一个数值
-            //     int randomConfigId = UnityEngine.Random.Range(1053, 1070);
-            //     Test1(self, randomConfigId).NoContext();
-            // }
+            //测试生成法宝到物品栏
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                Debug.Log("我按下了J 生成法宝～");
+                // 从1001-1050中随机选择一个数值
+                int randomConfigId = UnityEngine.Random.Range(1002, 1017);
+                //获取法宝那边 也得改
+            
+                //固定获取 宝莲灯
+                Test1(self, 1008).NoContext();
+            }
+            //测试生成材料到物品栏
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                Debug.Log("我按下了J 生成材料～");
+                // 从1001-1050中随机选择一个数值
+                int randomConfigId = UnityEngine.Random.Range(1053, 1070);
+                Test1(self, randomConfigId).NoContext();
+            }
             //
             //
             // if (Input.GetKeyDown(KeyCode.M))
@@ -477,9 +479,9 @@ namespace ET.Client
             //背包刷新
             // await self.DynamicEvent(new EventBagItemReFresh());
             // 快捷栏刷新
-            // await self.DynamicEvent(new EventQuickItemReFresh());
+            await self.DynamicEvent(new EventQuickItemReFresh());
             // 快捷法宝栏刷新
-            // await self.DynamicEvent(new EventQuickItemFunctionReFresh());
+            await self.DynamicEvent(new EventQuickItemFunctionReFresh());
 
 
             await ETTask.CompletedTask;
